@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cardanom – 偽りのリスト 日本語ビュー（サンプル）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+          "Helvetica Neue", sans-serif;
+        margin: 0;
+        padding: 1.5rem;
+        background: #0b1120;
+        color: #e5e7eb;
+      }
+      h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+      .subtitle {
+        color: #9ca3af;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+      }
+      #app {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: #020617;
+        border-radius: 0.75rem;
+        padding: 1rem 1.1rem;
+        border: 1px solid #1f2937;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      }
+      .fund-tag {
+        font-size: 0.75rem;
+        color: #a5b4fc;
+        margin-bottom: 0.4rem;
+      }
+      .challenge {
+        font-size: 0.75rem;
+        color: #6b7280;
+        margin-bottom: 0.6rem;
+      }
+      .title-ja {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+      }
+      .title-en {
+        font-size: 0.8rem;
+        color: #9ca3af;
+        margin-bottom: 0.5rem;
+      }
+      .summary-ja {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+      }
+      .meta {
+        font-size: 0.75rem;
+        color: #9ca3af;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+      .link {
+        color: #38bdf8;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      .error {
+        color: #f97373;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>なんちゃってCardanon – 提案集 日本語ビュー（サンプル）</h1>
+    <div class="subtitle">
+      <code>data/sample_proposals_ja.json</code>
+      を読み込んで、翻訳済みプロポーザルを表示しています。
+    </div>
+
+    <div id="app">読み込み中...</div>
+    <div id="error" class="error"></div>
+
+    <script>
+      async function loadProposals() {
+        const app = document.getElementById("app");
+        const errorBox = document.getElementById("error");
+
+        try {
+          const res = await fetch("data/f14_proposals_ja.json");
+          if (!res.ok) {
+            throw new Error("HTTP " + res.status + " : " + res.statusText);
+          }
+          const proposals = await res.json();
+
+          if (!Array.isArray(proposals) || proposals.length === 0) {
+            app.textContent = "表示できるプロポーザルがありません。";
+            return;
+          }
+
+          app.innerHTML = ""; // 初期メッセージを消す
+
+          for (const p of proposals) {
+            const card = document.createElement("article");
+            card.className = "card";
+
+            const fundTag = document.createElement("div");
+            fundTag.className = "fund-tag";
+            fundTag.textContent = `Fund ${p.fund ?? "?"} – ${
+              p.proposal_id ?? ""
+            }`;
+            card.appendChild(fundTag);
+
+            const challenge = document.createElement("div");
+            challenge.className = "challenge";
+            challenge.textContent = p.challenge || "";
+            card.appendChild(challenge);
+
+            const titleJa = document.createElement("div");
+            titleJa.className = "title-ja";
+            titleJa.textContent = p.title_ja || "(日本語タイトル 未設定)";
+            card.appendChild(titleJa);
+
+            const titleEn = document.createElement("div");
+            titleEn.className = "title-en";
+            titleEn.textContent = p.title_en || "";
+            card.appendChild(titleEn);
+
+            const summaryJa = document.createElement("div");
+            summaryJa.className = "summary-ja";
+            summaryJa.textContent = p.summary_ja || "(日本語サマリー 未設定)";
+            card.appendChild(summaryJa);
+
+            const meta = document.createElement("div");
+            meta.className = "meta";
+
+            const amount = document.createElement("span");
+            if (p.requested_ada != null) {
+              amount.textContent = `Requested: ${p.requested_ada} ADA`;
+            } else {
+              amount.textContent = "";
+            }
+            meta.appendChild(amount);
+
+            if (p.url) {
+              const link = document.createElement("a");
+              link.href = p.url;
+              link.textContent = "元の提案を見る";
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+              link.className = "link";
+              meta.appendChild(link);
+            }
+
+            card.appendChild(meta);
+            app.appendChild(card);
+          }
+        } catch (err) {
+          console.error(err);
+          app.textContent = "";
+          errorBox.textContent =
+            "データの読み込みに失敗しました: " + err.message;
+        }
+      }
+
+      loadProposals();
+    </script>
+  </body>
+</html>

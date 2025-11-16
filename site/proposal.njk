@@ -1,0 +1,41 @@
+---
+pagination:
+  data: f14
+  size: 1
+  alias: proposal
+permalink: "f14/{{ proposal.proposal_id | slug }}/"
+layout: layouts/base.njk
+---
+
+<style>
+  .en { font-size: 0.9rem; color: #9ca3af; margin-bottom: 0.8rem; }
+  .meta { font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.8rem; }
+  .block-title { font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
+  .block-body { font-size: 0.95rem; line-height: 1.7; }
+</style>
+
+{% set title = proposal.title_ja or proposal.title_en %}
+{% set requested = proposal.requested_ada or "―" %}
+
+<h2>{{ title }}</h2>
+
+<div class="en">{{ proposal.title_en }}</div>
+
+<div class="meta">
+  <div>Proposal ID: {{ proposal.proposal_id }}</div>
+  <div>Fund: {{ proposal.fund }}</div>
+  <div>要求額: {{ requested }}</div>
+</div>
+
+<div class="block-title">概要（日本語）</div>
+<div class="block-body">
+  {% if proposal.summary_ja %}
+    {{ proposal.summary_ja | safe }}
+  {% else %}
+    未翻訳（概要テキスト未設定）
+  {% endif %}
+</div>
+
+<p style="margin-top:1.5rem;">
+  <a href="/">← 一覧に戻る</a>
+</p>

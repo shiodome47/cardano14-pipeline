@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+title: "Fund14 プロポーザル一覧"
+---
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    background: #020617;
+    border-radius: 0.75rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid #1f2937;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  }
+  .id { font-size: 0.75rem; color: #a5b4fc; margin-bottom: 0.3rem; }
+  .title-ja { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+  .title-en { font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.4rem; }
+  .meta { font-size: 0.75rem; color: #9ca3af; }
+</style>
+
+<div class="grid">
+{% for p in f14 %}
+  <article class="card">
+    <div class="id">{{ p.proposal_id }}</div>
+    <div class="title-ja">
+      <a href="/f14/{{ p.proposal_id | slug }}/">
+        {{ p.title_ja or "(日本語タイトル未設定)" }}
+      </a>
+    </div>
+    <div class="title-en">{{ p.title_en }}</div>
+    <div class="meta">
+      要求額: {{ p.requested_ada or "―" }}
+    </div>
+  </article>
+{% endfor %}
+</div>

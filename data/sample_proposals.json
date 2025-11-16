@@ -1,0 +1,38 @@
+[
+  {
+    "proposal_id": "F23-0420",
+    "fund": 23,
+    "challenge": "Unclear Innovations",
+    "title_en": "AI-powered vending machine for blockchain metaphors",
+    "summary_en": "A machine that dispenses cryptic quotes whenever the market dips, soothing investors through poetic confusion.",
+    "requested_ada": 12345,
+    "url": "https://example.com/proposal/F23-0420"
+  },
+  {
+    "proposal_id": "F23-0999",
+    "fund": 23,
+    "challenge": "Quantum-ready DAOs",
+    "title_en": "Preparing the blockchain for aliens",
+    "summary_en": "Developing protocols in anticipation of extraterrestrial validators joining the network. Inclusivity on a cosmic scale.",
+    "requested_ada": 88888,
+    "url": "https://example.com/proposal/F23-0999"
+  },
+  {
+    "proposal_id": "F23-2025",
+    "fund": 23,
+    "challenge": "Community Vibes",
+    "title_en": "The Silent Governance Podcast",
+    "summary_en": "Weekly episodes featuring total silence — symbolizing governance participation rates.",
+    "requested_ada": 5000,
+    "url": "https://example.com/proposal/F23-2025"
+  },
+  {
+    "proposal_id": "F23-7777",
+    "fund": 23,
+    "challenge": "AI & Spirituality",
+    "title_en": "Teaching GPTs to meditate before making funding decisions",
+    "summary_en": "An exploration of mindful machine learning. Can an LLM achieve enlightenment before it reaches consensus?",
+    "requested_ada": 42000,
+    "url": "https://example.com/proposal/F23-7777"
+  }
+]

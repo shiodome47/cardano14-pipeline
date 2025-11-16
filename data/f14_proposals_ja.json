@@ -1,0 +1,1082 @@
+[
+  {
+    "proposal_id": "F14-0001",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bifrost: Bitcoin-Cardano bridge secured by Cardano SPOs",
+    "summary_en": "",
+    "requested_ada": "₳739,000",
+    "title_ja": "Bifrost：CardanoのSPOがセキュリティを担うビットコイン－Cardanoブリッジ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0002",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano’s First End-to-End Metal and Minerals RWA Ecosystem",
+    "summary_en": "",
+    "requested_ada": "₳550,000",
+    "title_ja": "カルダノ初のエンドツーエンド金属・鉱物リアルワールドアセット（RWA）エコシステム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0003",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Leverage Trading with Market/Limit Orders on Minswap",
+    "summary_en": "",
+    "requested_ada": "₳604,700",
+    "title_ja": "Minswapでの成行・指値注文を活用したレバレッジ取引",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0004",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "CHARLI3 Open Source Oracle Marketplace and Launchpad",
+    "summary_en": "",
+    "requested_ada": "₳595,000",
+    "title_ja": "CHARLI3 オープンソース オラクル マーケットプレイス＆ローンチパッド",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0005",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Indigo V3 – CNT-Backed Collateral for Indigo CDPs",
+    "summary_en": "",
+    "requested_ada": "₳550,000",
+    "title_ja": "Indigo V3 – CNT担保によるIndigo CDPの実現",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0006",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "IndianChain: Indian Government's 10M+ Settlements on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳570,000",
+    "title_ja": "IndianChain：インド政府の1,000万件以上の決済をCardano上で実現",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0007",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bringing Multi-Chain Users From Ctrl Wallet Into Cardano",
+    "summary_en": "",
+    "requested_ada": "₳475,000",
+    "title_ja": "CtrlウォレットのマルチチェーンユーザーをCardanoへ誘導するプロジェクト",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0008",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Corporate PoC Lab - Japan (powered by Antler Ibex)",
+    "summary_en": "",
+    "requested_ada": "₳770,000",
+    "title_ja": "Cardano コーポレート PoC ラボ - 日本（Antler Ibex 提供）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0009",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AIRA : Hydra Loyalty & Crypto for Regional Revitalization",
+    "summary_en": "",
+    "requested_ada": "₳698,000",
+    "title_ja": "AIRA：ハイドラ・ロイヤリティ＆地域活性化のための暗号通貨",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0010",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Masumi AI Agent Network 2.0 by Serviceplan Group",
+    "summary_en": "",
+    "requested_ada": "₳900,000",
+    "title_ja": "Serviceplanグループによる「Masumi AIエージェントネットワーク 2.0」",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0011",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Real World Adoption: Cardano Payments in Vending Machines",
+    "summary_en": "",
+    "requested_ada": "₳750,000",
+    "title_ja": "現実世界での普及：自動販売機でのCardano決済導入",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0012",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onboard 50,000 Nigerian Farmers for Compliant Traceability",
+    "summary_en": "",
+    "requested_ada": "₳650,000",
+    "title_ja": "コンプライアンス対応のトレーサビリティを実現するため、ナイジェリアの農家5万人をオンボーディングします",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0013",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SNEKbot + SundaeLabs: Non-custodial Trading using Strategies",
+    "summary_en": "",
+    "requested_ada": "₳420,000",
+    "title_ja": "SNEKbot + SundaeLabs：戦略を活用したノンカストディアル取引\n\nCardanoコミュニティの皆様へ、\n\n本提案は、SNEKbotとSundaeLabsが協力し、ユーザー自身が資産を管理したまま取引戦略を実行できる「ノンカストディアル取引」システムの開発を目指します。これにより、資産の安全性を保ちながら、自動化された高度な取引戦略を活用できる環境を提供します。Cardanoエコシステムの成長と利便性向上に貢献することを期待しています。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0014",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ledger Live DRep Delegation Support",
+    "summary_en": "",
+    "requested_ada": "₳260,000",
+    "title_ja": "Ledger LiveでのDRep委任サポートについて\n\nCardanoコミュニティの皆様へ、\n\n本提案は、Ledger LiveアプリケーションにDRep（Delegated Representative）委任機能を追加することを目的としています。これにより、Ledgerデバイスを使うユーザーが安全かつ簡単にDRepへの委任を行えるようになり、プロジェクトの透明性と参加の幅が広がります。\n\nLedger LiveでのDRep委任サポートは、Cardanoの分散化とガバナンス強化に貢献し、より多くのホルダーがプロジェクトに積極的に参加できる環境を整えます。皆様のご支援をよろしくお願いいたします。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0015",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Japanese government funded: AI chat platform with Fujitsu",
+    "summary_en": "",
+    "requested_ada": "₳600,000",
+    "title_ja": "日本政府が資金提供：富士通と共同開発するAIチャットプラットフォーム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0016",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR Keyless: Self-Custody Without Seed Phrases",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "VESPR Keyless：シードフレーズ不要のセルフカストディサービス",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0017",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Stable + Cardano: fast and feeless USDT interopability",
+    "summary_en": "",
+    "requested_ada": "₳300,000",
+    "title_ja": "Stable + Cardano：高速かつ手数料無料のUSDT相互運用性実現へ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0018",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onchain analytics for the Cardano ecosystem",
+    "summary_en": "",
+    "requested_ada": "₳406,666",
+    "title_ja": "カルダノエコシステムのオンチェーン分析ツール",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0019",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "NuNet: Hydra-Powered Micropayments for DePIN",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "NuNet：Hydra技術を活用したDePIN向けマイクロペイメントシステム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0020",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Typhon Wallet - Secure Multi-Signature Support",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "タイフォンウォレット — 安全なマルチシグネチャ対応\n\nタイフォンウォレットにマルチシグネチャ機能を導入し、より高いセキュリティと柔軟な資産管理を実現します。複数の署名者による承認が必要となるため、不正アクセスや誤送金のリスクを大幅に軽減。Cardanoコミュニティの皆様が安心して資産を管理できる環境を提供します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0021",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "USDC + USDT perps on Cardano: extend Strike for multi-chain",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "Cardano上でのUSDC・USDT永久先物取引：Strikeをマルチチェーン対応に拡張する",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0022",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardanoscan Upgrade V3: Real-Time, Personal & More Analytics",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "Cardanoscan アップグレード V3：リアルタイムで、よりパーソナルに、さらに充実した分析機能を提供",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0023",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR x DexHunter: Stable-Swaps Aggregation 💱",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "VESPR x DexHunter：ステーブルスワップ集約プラットフォーム 💱\n\nCardanoコミュニティの皆様へ、\n\n本提案は、VESPRとDexHunterが協力して開発する「ステーブルスワップ集約プラットフォーム」の実現を目指します。ステーブルコイン間の交換（ステーブルスワップ）を一つのインターフェースでまとめることで、より効率的かつ低コストな取引を可能にします。\n\nこれにより、Cardano上での資産移動がスムーズになり、ユーザー体験の向上とエコシステムの活性化に貢献します。皆様のご支援をよろしくお願いいたします。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0024",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Strike Finance <> Bodega Market: Predection Market Perps",
+    "summary_en": "",
+    "requested_ada": "₳506,000",
+    "title_ja": "Strike Finance と Bodega Market：予測市場の永久先物取引",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0025",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Institutional UX Stack: Compliance & BTC-Ready DeFi",
+    "summary_en": "",
+    "requested_ada": "₳825,000",
+    "title_ja": "カルダノ機関投資家向けUXスタック：コンプライアンス対応＆ビットコイン対応のDeFi環境構築",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0026",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano cross-chain swaps with 25+ blockchains",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "Cardanoと25以上のブロックチェーン間でのクロスチェーンスワップ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0027",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "High-Yield RWA on Cardano: Tokenized U.S. Real Estate",
+    "summary_en": "",
+    "requested_ada": "₳750,000",
+    "title_ja": "カルダノ上で高利回りの実物資産（RWA）：米国不動産のトークン化",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0028",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR: Mobile Governance - Activating 100M+ ADA",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "VESPR：モバイルガバナンス — 1億ADA以上の活用を目指して",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0029",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Boosting USDM/USDA adoption with \"BUY NOW, PAY LATER\" loans.",
+    "summary_en": "",
+    "requested_ada": "₳380,000",
+    "title_ja": "「今すぐ購入、後で支払う」ローンでUSDM/USDAの利用促進を目指します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0030",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ethereum to Cardano Multi-Asset Bridge Powered by Wormhole",
+    "summary_en": "",
+    "requested_ada": "₳750,000",
+    "title_ja": "ウォームホール技術によるイーサリアムからカルダノへのマルチアセットブリッジ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0031",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "MLabs - Feesaswap: Decentralized Fee Trading on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳415,529",
+    "title_ja": "MLabs - Feesaswap：Cardano上の分散型手数料取引プラットフォーム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0032",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DPP - Compliant Onchain European Digital Product Passport",
+    "summary_en": "",
+    "requested_ada": "₳499,000",
+    "title_ja": "DPP – コンプライアントなオンチェーン欧州デジタル製品パスポート",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0033",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "1694.io - Open Source Governance Tooling & DRep Platform",
+    "summary_en": "",
+    "requested_ada": "₳252,000",
+    "title_ja": "1694.io - オープンソースのガバナンスツール＆DRepプラットフォーム\n\n1694.ioは、CardanoコミュニティのためのオープンソースガバナンスツールとDRep（分散代表者）プラットフォームを提供します。これにより、コミュニティメンバーは透明かつ効率的に意思決定に参加でき、より強固な分散型ガバナンスの実現を目指します。Cardanoホルダーの皆様が主体的に関わるための新しい環境を創出します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0034",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Real Estate Tokenization Powered by Cardano",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "カルダノが実現する不動産のトークン化",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0035",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AgriPass- Verified Identity, Trusted Agriculture.",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "AgriPass — 信頼できる農業のための本人確認システム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0036",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Hypernative Real-Time Security for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳550,000",
+    "title_ja": "カルダノのためのハイパーネイティブリアルタイムセキュリティ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0037",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Launching the Frax Stablecoin & DeFi Ecosystem on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳850,000",
+    "title_ja": "カルダノ上でのFraxステーブルコイン＆DeFiエコシステムの立ち上げ",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0038",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AI Agent to Break Barriers and Unlock Cardano DeFi Adoption",
+    "summary_en": "",
+    "requested_ada": "₳700,000",
+    "title_ja": "CardanoのDeFi普及を加速するAIエージェントの開発",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0039",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Clarity X Tempo: Cardano Governance Hub",
+    "summary_en": "",
+    "requested_ada": "₳700,000",
+    "title_ja": "Clarity X Tempo：カルダノ ガバナンス ハブ\n\n本プロジェクト「Clarity X Tempo」は、カルダノのガバナンス活動をより分かりやすく、効率的に進めるためのハブ（拠点）を目指しています。コミュニティメンバーが提案の内容や進捗を簡単に把握できるようにし、参加や意思決定をサポートします。カルダノの持続的な発展に向けて、皆さまの声をより反映しやすくするための重要な基盤となることを目指しています。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0040",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Faster & Trusted Cardano Oracle, 98x Cheaper vs Chainlink",
+    "summary_en": "",
+    "requested_ada": "₳590,000",
+    "title_ja": "より高速で信頼できるCardanoオラクル  \nChainlinkと比べて98倍のコスト削減を実現",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0041",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Financial Inclusion for Unbanked Women via DID and Education",
+    "summary_en": "",
+    "requested_ada": "₳636,800",
+    "title_ja": "銀行口座を持たない女性のための金融包摂：DIDと教育を通じて",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0042",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ISO-Compliant Forest MRV - Satellite Oracle Extension",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "ISO準拠の森林MRV（測定・報告・検証）－衛星オラクル拡張機能",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0043",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Mesh UTXOS x Mercuryo (MasterCard) x Checkpoint",
+    "summary_en": "",
+    "requested_ada": "₳490,000",
+    "title_ja": "Mesh UTXOS × Mercuryo（MasterCard）× Checkpoint",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0044",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Flow V2 - Open Source Multi Collateral AMM Lending Pools",
+    "summary_en": "",
+    "requested_ada": "₳408,000",
+    "title_ja": "Flow V2 – オープンソースのマルチ担保対応AMMレンディングプール\n\n本提案は、複数の担保資産に対応した自動マーケットメイカー（AMM）型のレンディングプール「Flow V2」を開発・公開するものです。これにより、Cardanoコミュニティの皆様がより柔軟かつ効率的に資産を活用し、分散型金融（DeFi）エコシステムの成長に貢献できる環境を目指します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0045",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "All-in-One Catalyst: Notifications, AI Lists & Portfolios",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "オールインワン Catalyst：通知機能、AIリスト＆ポートフォリオ管理",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0046",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onchain Leverage Trading on Splash",
+    "summary_en": "",
+    "requested_ada": "₳338,000",
+    "title_ja": "Splashでのオンチェーンレバレッジ取引について",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0047",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Muzify Cardano Fan Wallet & USDA Loyalty Engine",
+    "summary_en": "",
+    "requested_ada": "₳350,000",
+    "title_ja": "Muzify Cardano ファンウォレット＆USDAロイヤリティエンジン\n\nこちらのプロジェクトは、Cardanoコミュニティ向けに設計された「Muzify Cardanoファンウォレット」と、ユーザーのロイヤリティを高める「USDAロイヤリティエンジン」を開発します。ファンウォレットは、Cardano保有者が音楽やエンターテインメント関連のNFTやトークンを安全かつ便利に管理できるツールです。また、USDAロイヤリティエンジンは、ユーザーの参加や貢献に応じて報酬を提供し、コミュニティの活性化を促進します。Cardanoエコシステムの成長とファン体験の向上に貢献することを目指しています。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0048",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "WFP Price Ledger: Democratizing Market Data with Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳480,000",
+    "title_ja": "WFPプライスレジャー：ブロックチェーンで市場データの民主化を目指して",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0049",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "One-Click Insurance for transactions onCardano Chain & DApps",
+    "summary_en": "",
+    "requested_ada": "₳500,000",
+    "title_ja": "CardanoチェーンおよびDAppsの取引をワンクリックで保険対応",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0050",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Whitelabel Hydra Auctions for Gaming & Defi (MLabs + Ikigai)",
+    "summary_en": "",
+    "requested_ada": "₳360,793",
+    "title_ja": "ホワイトラベル版Hydraオークション：ゲーム＆DeFi向け（MLabs＋Ikigai）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0051",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Armenia- Country Level Waste System with Plastiks.io",
+    "summary_en": "",
+    "requested_ada": "₳280,000",
+    "title_ja": "アルメニア：Plastiks.ioによる国レベルの廃棄物管理システム提案\n\n本提案は、アルメニア国内での廃棄物管理を効率化し、環境負荷を軽減するために、Plastiks.ioの技術を活用した国レベルのシステム構築を目指します。Cardanoのブロックチェーン技術を活用することで、廃棄物の追跡やリサイクルの透明性を高め、地域社会と連携した持続可能な循環型経済の実現を支援します。アルメニアの環境改善とコミュニティの発展に貢献する重要な取り組みです。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0052",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "NuNet: Decentralized SPO Computing - Scaling&Expansion",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "NuNet：分散型SPOコンピューティング — スケーリングと拡張\n\n本提案は、Cardanoのステークプールオペレーター（SPO）が分散型コンピューティングリソースを活用できるプラットフォーム「NuNet」の開発と拡大を目指します。これにより、SPOは自身の計算資源を効率的に提供・共有し、ネットワーク全体のスケーラビリティ向上とエコシステムの成長に貢献できます。Cardanoコミュニティの持続的な発展を支える重要なインフラとして期待されています。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0053",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SMARTMERCH™ on Cardano — Bringing Onchain RWA to Daily Life",
+    "summary_en": "",
+    "requested_ada": "₳500,000",
+    "title_ja": "Cardano上のSMARTMERCH™ — 日常生活にオンチェーンRWAをもたらす",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0054",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Commercial Bank Money Token CBMT on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳500,000",
+    "title_ja": "Cardano上の商業銀行マネートークン（CBMT）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0055",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BikeID Proof Of Bike Millions of Bikes Registered on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳647,354",
+    "title_ja": "BikeID：Cardano上に登録された数百万台の自転車の証明書",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0056",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Juicychain: Tracing the Global Juice Supply Chain on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳505,000",
+    "title_ja": "Juicychain：Cardano上で世界のジュース供給チェーンを追跡するプロジェクト",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0057",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Hydra-Powered EV Battery DPP: Privacy + Transparency",
+    "summary_en": "",
+    "requested_ada": "₳396,000",
+    "title_ja": "ハイドラ搭載EVバッテリーDPP：プライバシーと透明性の両立\n\n本提案は、Cardanoのハイドラ技術を活用した電気自動車（EV）バッテリーの分散型プライバシープロトコル（DPP）を開発します。ユーザーのプライバシーを守りつつ、バッテリーの状態や履歴を透明に管理することで、信頼性と安全性を高めることを目指します。Cardanoコミュニティの皆様にとって、持続可能なモビリティの未来を支える重要な一歩となるでしょう。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0058",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Malama Carbon - Universal dMRV Infrastructure on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳495,000",
+    "title_ja": "Malama Carbon – Cardano上のユニバーサルdMRVインフラストラクチャー",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0059",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bridge between Cardano, Polkadot, Ethereum and its L2s",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "Cardano、Polkadot、Ethereumおよびそのレイヤー2間のブリッジ構築",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0060",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "LayerZero Support on Cardano Testnets",
+    "summary_en": "",
+    "requested_ada": "₳400,000",
+    "title_ja": "CardanoテストネットにおけるLayerZeroサポートについて",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0061",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ascent Rivals - Onboarding Next Million Users",
+    "summary_en": "",
+    "requested_ada": "₳800,000",
+    "title_ja": "Ascent Rivals － 次の100万人ユーザーを迎え入れるために",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0062",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "EUR Stablecoin on Cardano - Fiat Backed and MiCA Compliant",
+    "summary_en": "",
+    "requested_ada": "₳780,571",
+    "title_ja": "カルダノ上のEURステーブルコイン — 法定通貨担保型でMiCA規制準拠",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0063",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "WineOpSys via Originate - ERP with supply chain tracking",
+    "summary_en": "",
+    "requested_ada": "₳379,000",
+    "title_ja": "WineOpSys via Originate – サプライチェーン追跡機能を備えたERPシステム\n\nWineOpSysは、Originate社が開発する、ワイン業界向けの統合型ERP（基幹業務管理）システムです。本システムは、製造から流通までのサプライチェーン全体をリアルタイムで追跡・管理できる機能を備えており、透明性と効率性の向上を目指します。Cardanoのブロックチェーン技術を活用することで、信頼性の高いデータ管理とトレーサビリティを実現し、業界全体の発展に貢献します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0064",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Enterprise-grade Verifiable Database,300x cheaper, 99%faster",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "エンタープライズ対応の検証可能なデータベース  \nコストは従来の300分の1、処理速度は99％向上",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0065",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cross Chain DeFi - Perpetuals and Lending - Pondora",
+    "summary_en": "",
+    "requested_ada": "₳285,000",
+    "title_ja": "クロスチェーンDeFi — 永続契約とレンディング — Pondora\n\n本提案は、Cardanoコミュニティ向けにクロスチェーン対応の分散型金融（DeFi）サービスを提供することを目的としています。特に、永続契約（パーペチュアルスワップ）とレンディング機能に注力し、ユーザーが複数のブロックチェーン間で資産を活用できる環境を構築します。\n\nPondoraは、安全かつ効率的な取引体験を実現し、Cardanoエコシステムの成長と利便性向上に貢献します。これにより、Cardanoホルダーの皆様がより多様なDeFiサービスを利用できるようになることを目指しています。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0066",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ClimateAid: Tokenized Resilience & Early Action",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "ClimateAid：トークン化されたレジリエンスと早期対応\n\nClimateAidは、気候変動に対する地域の強靭性（レジリエンス）を高め、早期の対策を促進するためのプロジェクトです。トークン技術を活用し、コミュニティが気候リスクに迅速に対応できる仕組みを構築します。Cardanoのブロックチェーンを基盤とすることで、透明性と信頼性を確保しながら、持続可能な未来づくりに貢献します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0067",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Space and Time: Deploying Thousands of Mini-apps to Cardano",
+    "summary_en": "",
+    "requested_ada": "₳900,000",
+    "title_ja": "スペース・アンド・タイム：数千のミニアプリをCardano上に展開する取り組み",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0068",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Connecting to Solana Via RosenBridge",
+    "summary_en": "",
+    "requested_ada": "₳500,000",
+    "title_ja": "RosenBridgeを通じてSolanaと接続する",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0069",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Institutional Staking & Governance via Colossus Hub",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "コロッサスハブによる機関投資家向けステーキング＆ガバナンス支援",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0070",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SteelSwap V2",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "---\nSteelSwap V2（スティールスワップ バージョン2）\n---",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0071",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Tokenized CO₂ Commitments via Plastiks Platform",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "プラスティクスプラットフォームによるトークン化されたCO₂削減コミットメント",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0072",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "TapDano & Petrobras - Hydra & NFC Presence Tracking System",
+    "summary_en": "",
+    "requested_ada": "₳828,162",
+    "title_ja": "TapDano と Petrobras — Hydra と NFC を活用した所在追跡システム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0073",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexHunter Advanced Order Types",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "DexHunter 高度注文タイプ拡張\n\nCardanoコミュニティの皆様へ、\n\n本提案は、DexHunterに新たな高度注文タイプを導入することを目的としています。これにより、ユーザーはより柔軟で戦略的な取引が可能となり、流動性の向上や取引体験の質的向上が期待されます。\n\nCardanoの分散型取引所（DEX）をさらに使いやすく、強力なものにするための重要なステップとして、ぜひご支援をお願いいたします。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0074",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BankFi: Asset-Backed Launches Enabling Project Longevity",
+    "summary_en": "",
+    "requested_ada": "₳330,000",
+    "title_ja": "BankFi：資産担保型ローンチでプロジェクトの持続性を支援",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0075",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "TrustSwap(TS), STORM & MLabs: Cardano TS Integration + WL",
+    "summary_en": "",
+    "requested_ada": "₳665,000",
+    "title_ja": "TrustSwap（TS）、STORM、MLabs：CardanoへのTS統合とホワイトリスト（WL）について",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0076",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "MLabs + J50 VENTURES: Playrz Responsible p2p Sports Platform",
+    "summary_en": "",
+    "requested_ada": "₳497,369",
+    "title_ja": "MLabs + J50 VENTURES：Playrz 責任あるP2Pスポーツプラットフォーム\n\n本提案は、Cardanoコミュニティ向けに、安全かつ信頼できるピアツーピア（P2P）スポーツベッティングプラットフォーム「Playrz」の開発を目指します。ユーザー同士が直接対戦し、公正な環境でスポーツを楽しめる仕組みを提供し、責任あるギャンブルの促進にも注力します。Cardanoの技術を活用し、透明性とセキュリティを高めることで、コミュニティ全体の信頼向上に貢献します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0077",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "LootMogul|SuperAthlete.ai: AI+Tokenized Sports IP on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳350,000",
+    "title_ja": "LootMogul｜SuperAthlete.ai：Cardano上のAIとトークン化されたスポーツIPの融合",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0078",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bodega Market V4 - Central Limit Order Book (CLOB)",
+    "summary_en": "",
+    "requested_ada": "₳370,000",
+    "title_ja": "Bodega Market V4 – 中央リミットオーダーブック（CLOB）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0079",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Scaling Cardano Adoption via K-12 Financial EdTech Platform",
+    "summary_en": "",
+    "requested_ada": "₳770,000",
+    "title_ja": "カルダノ普及を加速するK-12向け金融教育テクノロジープラットフォーム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0080",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Space and Time: Secure Enterprise Data for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳900,000",
+    "title_ja": "スペース・アンド・タイム：Cardano向けの安全な企業データ管理",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0081",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BASE and INK: Connecting Exchange Environments to CNTs",
+    "summary_en": "",
+    "requested_ada": "₳480,000",
+    "title_ja": "BASEとINK：取引所環境をCNTsにつなぐ架け橋",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0082",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Integrating USDA with zerohash to access TradFi institutions",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "USDAとzerohashを連携し、伝統的金融機関（TradFi）へのアクセスを実現する取り組み",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0083",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Rainforest Alliance: Blockchain Traceability Pilot",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "レインフォレスト・アライアンス：ブロックチェーンによるトレーサビリティ・パイロットプロジェクト\n\nこちらは、レインフォレスト・アライアンスが提案する、ブロックチェーン技術を活用したトレーサビリティ（追跡可能性）向上のためのパイロットプロジェクトです。Cardanoの透明性と安全性を活かし、持続可能な農業や環境保護に貢献することを目指しています。コミュニティの皆様のご支援をお願いいたします。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0084",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Warriors: Driving Cardano Adoption via Epic Games",
+    "summary_en": "",
+    "requested_ada": "₳360,000",
+    "title_ja": "Cardano Warriors：壮大なゲームを通じてCardanoの普及を推進するプロジェクト",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0085",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Trade-to-Earn Hub (Powered by Iagon and Farmroll)",
+    "summary_en": "",
+    "requested_ada": "₳600,000",
+    "title_ja": "Cardano Trade-to-Earn ハブ（Iagon と Farmroll による協力）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0086",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Blockchain-Based Product Distribution Tracking",
+    "summary_en": "",
+    "requested_ada": "₳500,000",
+    "title_ja": "ブロックチェーンを活用した製品流通追跡システム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0087",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ADANSIE ASSET MANAGEMENT SYSTEM (Adansie= Evidence in Twi)",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000",
+    "title_ja": "ADANSIE資産管理システム（Adansie＝トゥイ語で「証拠」）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0088",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexHunter Gamify: Enhancing User Engagement via Gamification",
+    "summary_en": "",
+    "requested_ada": "₳255,000",
+    "title_ja": "DexHunter Gamify：ゲーミフィケーションによるユーザーエンゲージメントの向上\n\n本プロジェクト「DexHunter Gamify」は、ゲーミフィケーション（ゲーム要素の導入）を活用して、Cardanoコミュニティのユーザー参加と関与をより一層高めることを目指しています。楽しみながらDEX（分散型取引所）での取引や探索を促進し、より活発で魅力的なエコシステムの構築に貢献します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0089",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "PubWeave: Decentralized Peer Reviews",
+    "summary_en": "",
+    "requested_ada": "₳300,000",
+    "title_ja": "PubWeave：分散型ピアレビューシステム\n\nPubWeaveは、分散型ネットワークを活用したピアレビュー（相互評価）プラットフォームです。中央集権的な管理者を介さず、コミュニティメンバー同士が公平かつ透明にコンテンツやプロジェクトを評価できます。Cardanoの技術を活かし、信頼性の高いレビュー環境を提供することで、質の高い情報共有と健全なコミュニティ形成を目指します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0090",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Axiom-like Advanced Cardano Trading Platform by DexHunter",
+    "summary_en": "",
+    "requested_ada": "₳415,000",
+    "title_ja": "DexHunterによるAxiomに似た高度なCardano取引プラットフォーム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0091",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VyFi Auto-Harvester",
+    "summary_en": "",
+    "requested_ada": "₳335,000",
+    "title_ja": "VyFi オートハーベスター\n\nVyFi オートハーベスターは、Cardanoエコシステム内での資産運用をより効率的にする自動収穫ツールです。ユーザーがステーキング報酬やその他の収益を手動で回収する手間を省き、定期的かつ安全に利益を自動で回収・再投資します。これにより、Cardanoホルダーの資産運用がよりシンプルかつ効果的になります。コミュニティの皆様の資産成長をサポートするための革新的なソリューションです。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0092",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Driving Mainstream Cardano Adoption via Soccer w/ Miami FC",
+    "summary_en": "",
+    "requested_ada": "₳300,000",
+    "title_ja": "メインストリームへのカルダノ普及を目指して 〜マイアミFCとのサッカー連携〜",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0093",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexSwift",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "DexSwift\n\nDexSwiftは、Cardanoエコシステム向けの高速かつ使いやすい分散型取引所（DEX）を目指すプロジェクトです。ユーザーが安全に資産を取引できる環境を提供し、流動性の向上と手数料の低減を実現します。Cardanoのスマートコントラクト技術を活用し、透明性と信頼性の高い取引体験をお届けします。コミュニティの皆様と共に、より活発で持続可能なDeFiエコシステムの構築を目指します。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0094",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Wildcard for Cardano: Enabling Seamless Web3 Gaming",
+    "summary_en": "",
+    "requested_ada": "₳294,644",
+    "title_ja": "Cardanoのためのワイルドカード：シームレスなWeb3ゲーム体験の実現",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0095",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Levvy V3 Phase 2: Stake/Gov, Pooled & Leverage",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "Levvy V3 フェーズ2：ステーキング・ガバナンス、プール、レバレッジ機能の実装",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0096",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardania 2.0 Your AI Guide to Governance",
+    "summary_en": "",
+    "requested_ada": "₳300,000",
+    "title_ja": "Cardania 2.0 〜ガバナンスを導くあなたのAIガイド〜",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0097",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "OYA BusRide: ADA Transit Tickets, Manifest & Welfare System",
+    "summary_en": "",
+    "requested_ada": "₳965,000",
+    "title_ja": "OYA BusRide：ADAによる交通チケット・乗車管理・福祉システム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0098",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Kit for State Organisations - beHub Healthcare Dept.",
+    "summary_en": "",
+    "requested_ada": "₳360,000",
+    "title_ja": "Cardanoキット for 政府機関 － beHub ヘルスケア部門",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0099",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DappRadar:Discovery Platform for Cardano Mainstream Adoption",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "DappRadar：カルダノの主流化を目指す発見プラットフォーム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0100",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "CAR-dano v2: Tokenize Car Inspections → RWA Market Catalyst",
+    "summary_en": "",
+    "requested_ada": "₳350,000",
+    "title_ja": "CAR-dano v2：車検のトークン化によるリアル資産（RWA）市場の活性化",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0101",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano on Bubblemaps V2 (Ft. DexHunter)",
+    "summary_en": "",
+    "requested_ada": "₳450,000",
+    "title_ja": "バブルマップ V2 上のカルダノ（DexHunter 協力）",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0102",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Proof-of-Climate: Verified Environmental Assets on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳365,000",
+    "title_ja": "Proof-of-Climate：Cardano上で実現する環境資産の検証システム",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0103",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Build with journalists, trust incentivizing media pilot.",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "ジャーナリストと共に構築する、信頼を促進するメディアのパイロットプロジェクト。",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0104",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "9Z Globant + Cardano: Opening e-sports for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳744,891",
+    "title_ja": "9Z Globant と Cardano：Cardanoでeスポーツの新時代を切り拓く",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0105",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Trusted Product Reviews on Cardano Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳250,000",
+    "title_ja": "カルダノブロックチェーン上の信頼できる製品レビュー",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0106",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Walkers - Gamification for Mass Adoption!",
+    "summary_en": "",
+    "requested_ada": "₳310,460",
+    "title_ja": "ウォーカーズ ― 大衆普及のためのゲーミフィケーション！",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0107",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "First-Class Cardano Support for GridPlus Hardware",
+    "summary_en": "",
+    "requested_ada": "₳350,000",
+    "title_ja": "GridPlusハードウェア向けの最高品質なCardanoサポート",
+    "summary_ja": ""
+  },
+  {
+    "proposal_id": "F14-0108",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Trusted Product Transparency on Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳400,000",
+    "title_ja": "ブロックチェーンによる信頼できる製品の透明性",
+    "summary_ja": ""
+  }
+]

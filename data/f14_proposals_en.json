@@ -1,0 +1,866 @@
+[
+  {
+    "proposal_id": "F14-0001",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bifrost: Bitcoin-Cardano bridge secured by Cardano SPOs",
+    "summary_en": "",
+    "requested_ada": "₳739,000"
+  },
+  {
+    "proposal_id": "F14-0002",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano’s First End-to-End Metal and Minerals RWA Ecosystem",
+    "summary_en": "",
+    "requested_ada": "₳550,000"
+  },
+  {
+    "proposal_id": "F14-0003",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Leverage Trading with Market/Limit Orders on Minswap",
+    "summary_en": "",
+    "requested_ada": "₳604,700"
+  },
+  {
+    "proposal_id": "F14-0004",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "CHARLI3 Open Source Oracle Marketplace and Launchpad",
+    "summary_en": "",
+    "requested_ada": "₳595,000"
+  },
+  {
+    "proposal_id": "F14-0005",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Indigo V3 – CNT-Backed Collateral for Indigo CDPs",
+    "summary_en": "",
+    "requested_ada": "₳550,000"
+  },
+  {
+    "proposal_id": "F14-0006",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "IndianChain: Indian Government's 10M+ Settlements on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳570,000"
+  },
+  {
+    "proposal_id": "F14-0007",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bringing Multi-Chain Users From Ctrl Wallet Into Cardano",
+    "summary_en": "",
+    "requested_ada": "₳475,000"
+  },
+  {
+    "proposal_id": "F14-0008",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Corporate PoC Lab - Japan (powered by Antler Ibex)",
+    "summary_en": "",
+    "requested_ada": "₳770,000"
+  },
+  {
+    "proposal_id": "F14-0009",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AIRA : Hydra Loyalty & Crypto for Regional Revitalization",
+    "summary_en": "",
+    "requested_ada": "₳698,000"
+  },
+  {
+    "proposal_id": "F14-0010",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Masumi AI Agent Network 2.0 by Serviceplan Group",
+    "summary_en": "",
+    "requested_ada": "₳900,000"
+  },
+  {
+    "proposal_id": "F14-0011",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Real World Adoption: Cardano Payments in Vending Machines",
+    "summary_en": "",
+    "requested_ada": "₳750,000"
+  },
+  {
+    "proposal_id": "F14-0012",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onboard 50,000 Nigerian Farmers for Compliant Traceability",
+    "summary_en": "",
+    "requested_ada": "₳650,000"
+  },
+  {
+    "proposal_id": "F14-0013",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SNEKbot + SundaeLabs: Non-custodial Trading using Strategies",
+    "summary_en": "",
+    "requested_ada": "₳420,000"
+  },
+  {
+    "proposal_id": "F14-0014",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ledger Live DRep Delegation Support",
+    "summary_en": "",
+    "requested_ada": "₳260,000"
+  },
+  {
+    "proposal_id": "F14-0015",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Japanese government funded: AI chat platform with Fujitsu",
+    "summary_en": "",
+    "requested_ada": "₳600,000"
+  },
+  {
+    "proposal_id": "F14-0016",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR Keyless: Self-Custody Without Seed Phrases",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0017",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Stable + Cardano: fast and feeless USDT interopability",
+    "summary_en": "",
+    "requested_ada": "₳300,000"
+  },
+  {
+    "proposal_id": "F14-0018",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onchain analytics for the Cardano ecosystem",
+    "summary_en": "",
+    "requested_ada": "₳406,666"
+  },
+  {
+    "proposal_id": "F14-0019",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "NuNet: Hydra-Powered Micropayments for DePIN",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0020",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Typhon Wallet - Secure Multi-Signature Support",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0021",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "USDC + USDT perps on Cardano: extend Strike for multi-chain",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0022",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardanoscan Upgrade V3: Real-Time, Personal & More Analytics",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0023",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR x DexHunter: Stable-Swaps Aggregation 💱",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0024",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Strike Finance <> Bodega Market: Predection Market Perps",
+    "summary_en": "",
+    "requested_ada": "₳506,000"
+  },
+  {
+    "proposal_id": "F14-0025",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Institutional UX Stack: Compliance & BTC-Ready DeFi",
+    "summary_en": "",
+    "requested_ada": "₳825,000"
+  },
+  {
+    "proposal_id": "F14-0026",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano cross-chain swaps with 25+ blockchains",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0027",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "High-Yield RWA on Cardano: Tokenized U.S. Real Estate",
+    "summary_en": "",
+    "requested_ada": "₳750,000"
+  },
+  {
+    "proposal_id": "F14-0028",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VESPR: Mobile Governance - Activating 100M+ ADA",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0029",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Boosting USDM/USDA adoption with \"BUY NOW, PAY LATER\" loans.",
+    "summary_en": "",
+    "requested_ada": "₳380,000"
+  },
+  {
+    "proposal_id": "F14-0030",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ethereum to Cardano Multi-Asset Bridge Powered by Wormhole",
+    "summary_en": "",
+    "requested_ada": "₳750,000"
+  },
+  {
+    "proposal_id": "F14-0031",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "MLabs - Feesaswap: Decentralized Fee Trading on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳415,529"
+  },
+  {
+    "proposal_id": "F14-0032",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DPP - Compliant Onchain European Digital Product Passport",
+    "summary_en": "",
+    "requested_ada": "₳499,000"
+  },
+  {
+    "proposal_id": "F14-0033",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "1694.io - Open Source Governance Tooling & DRep Platform",
+    "summary_en": "",
+    "requested_ada": "₳252,000"
+  },
+  {
+    "proposal_id": "F14-0034",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Real Estate Tokenization Powered by Cardano",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0035",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AgriPass- Verified Identity, Trusted Agriculture.",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0036",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Hypernative Real-Time Security for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳550,000"
+  },
+  {
+    "proposal_id": "F14-0037",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Launching the Frax Stablecoin & DeFi Ecosystem on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳850,000"
+  },
+  {
+    "proposal_id": "F14-0038",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "AI Agent to Break Barriers and Unlock Cardano DeFi Adoption",
+    "summary_en": "",
+    "requested_ada": "₳700,000"
+  },
+  {
+    "proposal_id": "F14-0039",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Clarity X Tempo: Cardano Governance Hub",
+    "summary_en": "",
+    "requested_ada": "₳700,000"
+  },
+  {
+    "proposal_id": "F14-0040",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Faster & Trusted Cardano Oracle, 98x Cheaper vs Chainlink",
+    "summary_en": "",
+    "requested_ada": "₳590,000"
+  },
+  {
+    "proposal_id": "F14-0041",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Financial Inclusion for Unbanked Women via DID and Education",
+    "summary_en": "",
+    "requested_ada": "₳636,800"
+  },
+  {
+    "proposal_id": "F14-0042",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ISO-Compliant Forest MRV - Satellite Oracle Extension",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0043",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Mesh UTXOS x Mercuryo (MasterCard) x Checkpoint",
+    "summary_en": "",
+    "requested_ada": "₳490,000"
+  },
+  {
+    "proposal_id": "F14-0044",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Flow V2 - Open Source Multi Collateral AMM Lending Pools",
+    "summary_en": "",
+    "requested_ada": "₳408,000"
+  },
+  {
+    "proposal_id": "F14-0045",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "All-in-One Catalyst: Notifications, AI Lists & Portfolios",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0046",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Onchain Leverage Trading on Splash",
+    "summary_en": "",
+    "requested_ada": "₳338,000"
+  },
+  {
+    "proposal_id": "F14-0047",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Muzify Cardano Fan Wallet & USDA Loyalty Engine",
+    "summary_en": "",
+    "requested_ada": "₳350,000"
+  },
+  {
+    "proposal_id": "F14-0048",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "WFP Price Ledger: Democratizing Market Data with Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳480,000"
+  },
+  {
+    "proposal_id": "F14-0049",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "One-Click Insurance for transactions onCardano Chain & DApps",
+    "summary_en": "",
+    "requested_ada": "₳500,000"
+  },
+  {
+    "proposal_id": "F14-0050",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Whitelabel Hydra Auctions for Gaming & Defi (MLabs + Ikigai)",
+    "summary_en": "",
+    "requested_ada": "₳360,793"
+  },
+  {
+    "proposal_id": "F14-0051",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Armenia- Country Level Waste System with Plastiks.io",
+    "summary_en": "",
+    "requested_ada": "₳280,000"
+  },
+  {
+    "proposal_id": "F14-0052",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "NuNet: Decentralized SPO Computing - Scaling&Expansion",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0053",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SMARTMERCH™ on Cardano — Bringing Onchain RWA to Daily Life",
+    "summary_en": "",
+    "requested_ada": "₳500,000"
+  },
+  {
+    "proposal_id": "F14-0054",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Commercial Bank Money Token CBMT on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳500,000"
+  },
+  {
+    "proposal_id": "F14-0055",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BikeID Proof Of Bike Millions of Bikes Registered on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳647,354"
+  },
+  {
+    "proposal_id": "F14-0056",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Juicychain: Tracing the Global Juice Supply Chain on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳505,000"
+  },
+  {
+    "proposal_id": "F14-0057",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Hydra-Powered EV Battery DPP: Privacy + Transparency",
+    "summary_en": "",
+    "requested_ada": "₳396,000"
+  },
+  {
+    "proposal_id": "F14-0058",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Malama Carbon - Universal dMRV Infrastructure on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳495,000"
+  },
+  {
+    "proposal_id": "F14-0059",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bridge between Cardano, Polkadot, Ethereum and its L2s",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0060",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "LayerZero Support on Cardano Testnets",
+    "summary_en": "",
+    "requested_ada": "₳400,000"
+  },
+  {
+    "proposal_id": "F14-0061",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Ascent Rivals - Onboarding Next Million Users",
+    "summary_en": "",
+    "requested_ada": "₳800,000"
+  },
+  {
+    "proposal_id": "F14-0062",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "EUR Stablecoin on Cardano - Fiat Backed and MiCA Compliant",
+    "summary_en": "",
+    "requested_ada": "₳780,571"
+  },
+  {
+    "proposal_id": "F14-0063",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "WineOpSys via Originate - ERP with supply chain tracking",
+    "summary_en": "",
+    "requested_ada": "₳379,000"
+  },
+  {
+    "proposal_id": "F14-0064",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Enterprise-grade Verifiable Database,300x cheaper, 99%faster",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0065",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cross Chain DeFi - Perpetuals and Lending - Pondora",
+    "summary_en": "",
+    "requested_ada": "₳285,000"
+  },
+  {
+    "proposal_id": "F14-0066",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ClimateAid: Tokenized Resilience & Early Action",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0067",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Space and Time: Deploying Thousands of Mini-apps to Cardano",
+    "summary_en": "",
+    "requested_ada": "₳900,000"
+  },
+  {
+    "proposal_id": "F14-0068",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Connecting to Solana Via RosenBridge",
+    "summary_en": "",
+    "requested_ada": "₳500,000"
+  },
+  {
+    "proposal_id": "F14-0069",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Institutional Staking & Governance via Colossus Hub",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0070",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "SteelSwap V2",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0071",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Tokenized CO₂ Commitments via Plastiks Platform",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0072",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "TapDano & Petrobras - Hydra & NFC Presence Tracking System",
+    "summary_en": "",
+    "requested_ada": "₳828,162"
+  },
+  {
+    "proposal_id": "F14-0073",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexHunter Advanced Order Types",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0074",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BankFi: Asset-Backed Launches Enabling Project Longevity",
+    "summary_en": "",
+    "requested_ada": "₳330,000"
+  },
+  {
+    "proposal_id": "F14-0075",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "TrustSwap(TS), STORM & MLabs: Cardano TS Integration + WL",
+    "summary_en": "",
+    "requested_ada": "₳665,000"
+  },
+  {
+    "proposal_id": "F14-0076",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "MLabs + J50 VENTURES: Playrz Responsible p2p Sports Platform",
+    "summary_en": "",
+    "requested_ada": "₳497,369"
+  },
+  {
+    "proposal_id": "F14-0077",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "LootMogul|SuperAthlete.ai: AI+Tokenized Sports IP on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳350,000"
+  },
+  {
+    "proposal_id": "F14-0078",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Bodega Market V4 - Central Limit Order Book (CLOB)",
+    "summary_en": "",
+    "requested_ada": "₳370,000"
+  },
+  {
+    "proposal_id": "F14-0079",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Scaling Cardano Adoption via K-12 Financial EdTech Platform",
+    "summary_en": "",
+    "requested_ada": "₳770,000"
+  },
+  {
+    "proposal_id": "F14-0080",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Space and Time: Secure Enterprise Data for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳900,000"
+  },
+  {
+    "proposal_id": "F14-0081",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "BASE and INK: Connecting Exchange Environments to CNTs",
+    "summary_en": "",
+    "requested_ada": "₳480,000"
+  },
+  {
+    "proposal_id": "F14-0082",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Integrating USDA with zerohash to access TradFi institutions",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0083",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Rainforest Alliance: Blockchain Traceability Pilot",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0084",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Warriors: Driving Cardano Adoption via Epic Games",
+    "summary_en": "",
+    "requested_ada": "₳360,000"
+  },
+  {
+    "proposal_id": "F14-0085",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Trade-to-Earn Hub (Powered by Iagon and Farmroll)",
+    "summary_en": "",
+    "requested_ada": "₳600,000"
+  },
+  {
+    "proposal_id": "F14-0086",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Blockchain-Based Product Distribution Tracking",
+    "summary_en": "",
+    "requested_ada": "₳500,000"
+  },
+  {
+    "proposal_id": "F14-0087",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "ADANSIE ASSET MANAGEMENT SYSTEM (Adansie= Evidence in Twi)",
+    "summary_en": "",
+    "requested_ada": "₳1,000,000"
+  },
+  {
+    "proposal_id": "F14-0088",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexHunter Gamify: Enhancing User Engagement via Gamification",
+    "summary_en": "",
+    "requested_ada": "₳255,000"
+  },
+  {
+    "proposal_id": "F14-0089",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "PubWeave: Decentralized Peer Reviews",
+    "summary_en": "",
+    "requested_ada": "₳300,000"
+  },
+  {
+    "proposal_id": "F14-0090",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Axiom-like Advanced Cardano Trading Platform by DexHunter",
+    "summary_en": "",
+    "requested_ada": "₳415,000"
+  },
+  {
+    "proposal_id": "F14-0091",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "VyFi Auto-Harvester",
+    "summary_en": "",
+    "requested_ada": "₳335,000"
+  },
+  {
+    "proposal_id": "F14-0092",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Driving Mainstream Cardano Adoption via Soccer w/ Miami FC",
+    "summary_en": "",
+    "requested_ada": "₳300,000"
+  },
+  {
+    "proposal_id": "F14-0093",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DexSwift",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0094",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Wildcard for Cardano: Enabling Seamless Web3 Gaming",
+    "summary_en": "",
+    "requested_ada": "₳294,644"
+  },
+  {
+    "proposal_id": "F14-0095",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Levvy V3 Phase 2: Stake/Gov, Pooled & Leverage",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0096",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardania 2.0 Your AI Guide to Governance",
+    "summary_en": "",
+    "requested_ada": "₳300,000"
+  },
+  {
+    "proposal_id": "F14-0097",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "OYA BusRide: ADA Transit Tickets, Manifest & Welfare System",
+    "summary_en": "",
+    "requested_ada": "₳965,000"
+  },
+  {
+    "proposal_id": "F14-0098",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano Kit for State Organisations - beHub Healthcare Dept.",
+    "summary_en": "",
+    "requested_ada": "₳360,000"
+  },
+  {
+    "proposal_id": "F14-0099",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "DappRadar:Discovery Platform for Cardano Mainstream Adoption",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0100",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "CAR-dano v2: Tokenize Car Inspections → RWA Market Catalyst",
+    "summary_en": "",
+    "requested_ada": "₳350,000"
+  },
+  {
+    "proposal_id": "F14-0101",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Cardano on Bubblemaps V2 (Ft. DexHunter)",
+    "summary_en": "",
+    "requested_ada": "₳450,000"
+  },
+  {
+    "proposal_id": "F14-0102",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Proof-of-Climate: Verified Environmental Assets on Cardano",
+    "summary_en": "",
+    "requested_ada": "₳365,000"
+  },
+  {
+    "proposal_id": "F14-0103",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Build with journalists, trust incentivizing media pilot.",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0104",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "9Z Globant + Cardano: Opening e-sports for Cardano",
+    "summary_en": "",
+    "requested_ada": "₳744,891"
+  },
+  {
+    "proposal_id": "F14-0105",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Trusted Product Reviews on Cardano Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳250,000"
+  },
+  {
+    "proposal_id": "F14-0106",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Walkers - Gamification for Mass Adoption!",
+    "summary_en": "",
+    "requested_ada": "₳310,460"
+  },
+  {
+    "proposal_id": "F14-0107",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "First-Class Cardano Support for GridPlus Hardware",
+    "summary_en": "",
+    "requested_ada": "₳350,000"
+  },
+  {
+    "proposal_id": "F14-0108",
+    "fund": 14,
+    "challenge": "",
+    "title_en": "Trusted Product Transparency on Blockchain",
+    "summary_en": "",
+    "requested_ada": "₳400,000"
+  }
+]
