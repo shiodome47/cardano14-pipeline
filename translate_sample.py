@@ -18,13 +18,31 @@ INPUT_FILE = DATA_DIR / "f14_proposals_en.json"
 OUTPUT_FILE = DATA_DIR / "f14_proposals_ja.json"
 
 
-def translate_text(text: str) -> str:
-    """Translate English text to Japanese for Cardano community."""
+def translate_title(text: str) -> str:
+    """Translate a proposal TITLE into concise Japanese (1行だけ)."""
+    prompt = (
+        "You are translating a Project Catalyst proposal TITLE into Japanese.\n"
+        "Return ONLY one concise Japanese title.\n"
+        "Do NOT add any greeting, explanation, or extra sentences.\n"
+        "Output must be a single line title only.\n\n"
+        f"TITLE:\n{text}\n"
+    )
+
+    res = client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.0,
+    )
+    return res.choices[0].message.content.strip()
+
+
+def translate_summary(text: str) -> str:
+    """Translate proposal summary/description into Japanese."""
     prompt = (
         "You are a translator for the Cardano community in Japan.\n"
-        "Translate the following Project Catalyst proposal text into natural Japanese.\n"
+        "Translate the following Project Catalyst proposal summary into natural Japanese.\n"
         "Target readers are Cardano holders and community members.\n"
-        "Keep it clear, respectful, and slightly explanatory, but not too long.\n\n"
+        "Keep it clear and respectful. You MAY be slightly explanatory, but avoid being too long.\n\n"
         f"---\n{text}\n---"
     )
 
@@ -41,7 +59,6 @@ def main():
     with INPUT_FILE.open("r", encoding="utf-8") as f:
         proposals = json.load(f)
 
-    # 2) Add Japanese fields
     translated = []
     for p in proposals:
         title_en = p.get("title_en", "")
@@ -49,8 +66,11 @@ def main():
 
         print(f"Translating: {p.get('proposal_id')} - {title_en}")
 
-        title_ja = translate_text(title_en) if title_en else ""
-        summary_ja = translate_text(summary_en) if summary_en else ""
+        # タイトルは「タイトル専用プロンプト」で1行だけ
+        title_ja = translate_title(title_en) if title_en else ""
+
+        # summary_en は今は空なので "" のままでOK
+        summary_ja = translate_summary(summary_en) if summary_en else ""
 
         new_p = {
             **p,
