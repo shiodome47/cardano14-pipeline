@@ -1,37 +1,53 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <title>{{ title or "Fund14 日本語ビュー" }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 1.5rem;
-      background: #0b1120;
-      color: #e5e7eb;
-    }
-    a { color: #38bdf8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .container { max-width: 1100px; margin: 0 auto; }
-    header { margin-bottom: 1.5rem; }
-    header h1 { font-size: 1.6rem; margin: 0 0 0.25rem; }
-    header .subtitle { color: #9ca3af; font-size: 0.9rem; }
-    main { display: block; }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1>{{ title or "Fund14 日本語ビュー" }}</h1>
-      <div class="subtitle">
-        Project Catalyst Fund14 の提案を、JSON → Eleventy で静的サイト表示しています。Tailwind CSSつけてかっこよくしたい件🥺
-      </div>
-    </header>
-    <main>
-      {{ content | safe }}
-    </main>
-  </div>
-</body>
+<!DOCTYPE html>
+<html lang="ja" class="h-full">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% if title %}{{ title }} | {% endif %}CardanoCatalyst Fund14
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {# Tailwind 出力CSS #}
+    <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}" />
+
+    {# ベースフォントだけ少し指定 #}
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+    </style>
+  </head>
+  <body class="min-h-full bg-carda-bg text-carda-textMain">
+    <div class="min-h-screen flex flex-col">
+      <header class="border-b border-carda-primarySoft/30 bg-carda-bg/90 backdrop-blur">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+         <div>
+            <a href="/" class="text-lg font-semibold tracking-tight text-carda-primary">
+              CardanoCatalyst Fund14
+            </a>
+            <p class="text-xs text-carda-textSub">
+              Project Catalyst Fund14 Proposals (JA)
+            </p>
+          </div>
+          <div class="hidden sm:flex gap-3 text-xs text-carda-textSub">
+            <span>Fund14</span>
+            <span>CardanoCatalyst Pipeline</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <div class="max-w-5xl mx-auto px-4 py-8">
+          {{ content | safe }}
+        </div>
+      </main>
+         <footer class="border-t border-carda-primarySoft/20 bg-carda-bg/90">
+         <div class="max-w-5xl mx-auto px-4 py-4 text-xs text-carda-textSub flex justify-between gap-3">
+            <span>© 2025 Cardanoism</span>
+            <span>Data: Project Catalyst Fund14</span>
+        </div>
+        </footer>
+    </div>
+  </body>
 </html>

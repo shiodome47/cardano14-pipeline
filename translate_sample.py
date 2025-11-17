@@ -55,34 +55,55 @@ def translate_summary(text: str) -> str:
 
 
 def main():
-    # 1) Load input JSON
+    # 1) Load input JSON（英語側）
     with INPUT_FILE.open("r", encoding="utf-8") as f:
         proposals = json.load(f)
 
+    # 2) 既存の日本語JSONがあれば読み込んで再利用
+    existing_by_id: dict[str, dict] = {}
+    if OUTPUT_FILE.exists():
+        with OUTPUT_FILE.open("r", encoding="utf-8") as f:
+            try:
+                existing = json.load(f)
+                for item in existing:
+                    pid = item.get("proposal_id")
+                    if pid:
+                        existing_by_id[pid] = item
+            except Exception:
+                # 壊れていても無視して新規生成
+                existing_by_id = {}
+
     translated = []
     for p in proposals:
+        pid = p.get("proposal_id")
         title_en = p.get("title_en", "")
         summary_en = p.get("summary_en", "")
 
-        print(f"Translating: {p.get('proposal_id')} - {title_en}")
-
-        # タイトルは「タイトル専用プロンプト」で1行だけ
-        title_ja = translate_title(title_en) if title_en else ""
-
-        # summary_en は今は空なので "" のままでOK
-        summary_ja = translate_summary(summary_en) if summary_en else ""
+        # すでに翻訳済みならそれを使う
+        old = existing_by_id.get(pid) if pid else None
+        if old and old.get("title_ja"):
+            title_ja = old.get("title_ja", "")
+            # summary_en が空なら古い summary_ja をそのまま使う
+            if summary_en:
+                summary_ja = old.get("summary_ja", "")
+            else:
+                summary_ja = old.get("summary_ja", "")
+            print(f"Reuse translation: {pid} - {title_en}")
+        else:
+            print(f"Translating: {pid} - {title_en}")
+            title_ja = translate_text(title_en) if title_en else ""
+            summary_ja = translate_text(summary_en) if summary_en else ""
 
         new_p = {
-            **p,
+            **p,  # 英語側の最新メタデータを優先
             "title_ja": title_ja,
             "summary_ja": summary_ja,
         }
         translated.append(new_p)
 
-    # 3) Save output JSON
+    # 3) Save output JSON（日本語側を上書き）
     with OUTPUT_FILE.open("w", encoding="utf-8") as f:
         json.dump(translated, f, ensure_ascii=False, indent=2)
-
     print(f"✅ Done. Saved {len(translated)} proposals to {OUTPUT_FILE}")
 
 

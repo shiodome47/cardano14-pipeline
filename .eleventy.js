@@ -1,11 +1,12 @@
 // .eleventy.js
 module.exports = function (eleventyConfig) {
+  // styles フォルダをそのまま _site/styles にコピー
+  eleventyConfig.addPassthroughCopy("site/styles");
+
   return {
     dir: {
-      input: "site", // テンプレート置き場
-      includes: "_includes",
-      data: "_data",
-      output: "_site", // 出力先
+      input: "site",
+      output: "_site",
     },
   };
 };
