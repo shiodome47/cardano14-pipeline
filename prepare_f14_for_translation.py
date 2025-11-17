@@ -38,6 +38,26 @@ def norm_text(value) -> str:
     return s
 
 
+def norm_int(value) -> str:
+    """整数系（投票数やADA量）を '585' や '256,533,420' 形式に整える。"""
+    if value is None:
+        return ""
+
+    # 数値ならそのまま整形
+    if isinstance(value, (int, float)):
+        return f"{int(value):,}"
+
+    # 文字列など
+    s = str(value).strip()
+    if not s or s.lower() == "nan":
+        return ""
+    try:
+        num = int(float(s))
+        return f"{num:,}"
+    except ValueError:
+        return s
+
+
 def norm_ada(value) -> str:
     """ADA 金額を '₳739,000' のような書式に整える."""
     if value is None:
@@ -84,14 +104,14 @@ def main():
 
         # 追加メタデータ
         status = norm_text(row.get(STATUS_COL, "")) if STATUS_COL else ""
-        votes_cast = norm_text(row.get(VOTES_CAST_COL, "")) if VOTES_CAST_COL else ""
-        yes_amount = norm_text(row.get(YES_COL, "")) if YES_COL else ""
-        abstain_amount = norm_text(row.get(ABSTAIN_COL, "")) if ABSTAIN_COL else ""
+        votes_cast = norm_int(row.get(VOTES_CAST_COL, "")) if VOTES_CAST_COL else ""
+        yes_amount = norm_int(row.get(YES_COL, "")) if YES_COL else ""
+        abstain_amount = norm_int(row.get(ABSTAIN_COL, "")) if ABSTAIN_COL else ""
         meets_approval_threshold = (
             norm_text(row.get(APPROVAL_COL, "")) if APPROVAL_COL else ""
         )
         fund_depletion = (
-            norm_text(row.get(FUND_DEPLETION_COL, "")) if FUND_DEPLETION_COL else ""
+            norm_int(row.get(FUND_DEPLETION_COL, "")) if FUND_DEPLETION_COL else ""
         )
         not_funded_reason = (
             norm_text(row.get(NOT_FUNDED_REASON_COL, ""))

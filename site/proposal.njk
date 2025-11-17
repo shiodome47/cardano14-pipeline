@@ -1,41 +1,276 @@
 ---
+layout: layouts/base.njk
+
 pagination:
-  data: f14
+  data: f14                  # f14 は「配列」なので、.proposals は付けない
   size: 1
   alias: proposal
-permalink: "f14/{{ proposal.proposal_id | slug }}/"
-layout: layouts/base.njk
+
+permalink: "/proposals/{{ proposal.proposal_id }}/index.html"
 ---
 
-<style>
-  .en { font-size: 0.9rem; color: #9ca3af; margin-bottom: 0.8rem; }
-  .meta { font-size: 0.8rem; color: #9ca3af; margin-bottom: 0.8rem; }
-  .block-title { font-weight: 600; margin-top: 1.2rem; margin-bottom: 0.3rem; }
-  .block-body { font-size: 0.95rem; line-height: 1.7; }
-</style>
+<div class="max-w-5xl mx-auto py-10 px-4 sm:px-6 lg:px-8 space-y-10">
 
-{% set title = proposal.title_ja or proposal.title_en %}
-{% set requested = proposal.requested_ada or "―" %}
+  {# タイトル & メタ #}
+  <header class="space-y-3">
+    <p class="text-xs font-medium tracking-wide text-slate-500 uppercase">
+      Project Catalyst Fund {{ proposal.fund }} · CardanoCatalyst Pipeline
+    </p>
+    <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+      {{ proposal.title_ja or proposal.title_en }}
+    </h1>
+    <p class="text-sm text-slate-500">
+      {{ proposal.proposal_id }} · Fund {{ proposal.fund }}
+      {% if proposal.challenge %}
+        · {{ proposal.challenge }}
+      {% endif %}
+    </p>
+  </header>
 
-<h2>{{ title }}</h2>
+  {# ステータス & 金額 #}
+  <section
+    class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4 rounded-2xl bg-white/70 ring-1 ring-slate-200/70 shadow-sm"
+  >
+    <div class="flex items-center gap-3">
+      {% set status = (proposal.status or "REQUESTED") | upper %}
+      {% if status == "FUNDED" %}
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700 border border-emerald-200">
+          FUNDED
+        </span>
+      {% elif status == "NOT FUNDED" %}
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-rose-100 text-rose-700 border border-rose-200">
+          NOT FUNDED
+        </span>
+      {% else %}
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-200">
+          REQUESTED
+        </span>
+      {% endif %}
 
-<div class="en">{{ proposal.title_en }}</div>
+      {% if proposal.requested_ada %}
+        <p class="text-sm text-slate-700">
+          Requested:
+          <span class="font-semibold">{{ proposal.requested_ada }}</span>
+        </p>
+      {% endif %}
+    </div>
 
-<div class="meta">
-  <div>Proposal ID: {{ proposal.proposal_id }}</div>
-  <div>Fund: {{ proposal.fund }}</div>
-  <div>要求額: {{ requested }}</div>
+    {% if proposal.proposal_url %}
+      <a
+        href="{{ proposal.proposal_url }}"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex items-center gap-1 text-xs font-medium text-sky-700 hover:text-sky-800 underline underline-offset-2"
+      >
+        原文（Project Catalyst サイト）を開く ↗
+      </a>
+    {% endif %}
+  </section>
+
+  {# 指標 #}
+  <section class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
+    <div class="p-4 rounded-2xl bg-white/70 ring-1 ring-slate-200/60">
+      <p class="text-xs font-medium text-slate-500">Votes cast</p>
+      <p class="mt-1 text-base font-semibold text-slate-900">
+        {{ (proposal.votes_cast or "-") | replace(".0","") }}
+      </p>
+    </div>
+    <div class="p-4 rounded-2xl bg-white/70 ring-1 ring-slate-200/60">
+      <p class="text-xs font-medium text-slate-500">Yes (ADA)</p>
+      <p class="mt-1 text-base font-semibold text-slate-900">
+        {{ (proposal.yes_amount or "-") | replace(".0","") }}
+      </p>
+    </div>
+    <div class="p-4 rounded-2xl bg-white/70 ring-1 ring-slate-200/60">
+      <p class="text-xs font-medium text-slate-500">Abstain (ADA)</p>
+      <p class="mt-1 text-base font-semibold text-slate-900">
+        {{ (proposal.abstain_amount or "-") | replace(".0","") }}
+      </p>
+    </div>
+    <div class="p-4 rounded-2xl bg-white/70 ring-1 ring-slate-200/60">
+      <p class="text-xs font-medium text-slate-500">Approval threshold</p>
+      <p class="mt-1 text-base font-semibold text-slate-900">
+        {{ proposal.meets_approval_threshold or "-" }}
+      </p>
+      {% if proposal.fund_depletion %}
+        <p class="mt-1 text-xs text-slate-500">
+          Fund depletion:
+          {{ (proposal.fund_depletion or "-") | replace(".0","") }}
+        </p>
+      {% endif %}
+      {% if proposal.not_funded_reason %}
+        <p class="mt-1 text-xs text-rose-500">
+          Reason (not funded): {{ proposal.not_funded_reason }}
+        </p>
+      {% endif %}
+    </div>
+  </section>
+
+  {# タブ #}
+  <section class="space-y-6">
+    <div class="inline-flex items-center gap-2 rounded-full bg-slate-100 p-1 text-xs font-medium">
+      <button
+        type="button"
+        class="px-4 py-1.5 rounded-full bg-white shadow-sm text-slate-900"
+        data-tab-button="en"
+      >
+        English
+      </button>
+      <button
+        type="button"
+        class="px-4 py-1.5 rounded-full text-slate-600"
+        data-tab-button="ja"
+      >
+        日本語
+      </button>
+      <button
+        type="button"
+        class="px-4 py-1.5 rounded-full text-slate-600"
+        data-tab-button="easy"
+      >
+        やさしい解説
+      </button>
+    </div>
+
+    <div class="space-y-8">
+      {# English タブ #}
+      <section id="tab-en" class="space-y-6" data-tab-panel="en">
+        <div class="space-y-6">
+          {% if proposal.problem_en or proposal.solution_en or proposal.about_en or proposal.team_en %}
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+                Problem
+              </div>
+              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+                {{ proposal.problem_en or "—" }}
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+                Solution
+              </div>
+              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+                {{ proposal.solution_en or "—" }}
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+                About this idea
+              </div>
+              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+                {{ proposal.about_en or "—" }}
+              </p>
+            </div>
+
+            <div>
+              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
+                Team
+              </div>
+              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+                {{ proposal.team_en or "—" }}
+              </p>
+            </div>
+
+          {% else %}
+            <p class="text-sm text-slate-700">
+              詳しい内容は
+              {% if proposal.proposal_url %}
+                <a
+                  href="{{ proposal.proposal_url }}"
+                  class="text-sky-600 hover:text-sky-700 underline underline-offset-2"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Project Catalyst の原文ページ
+                </a>
+              {% else %}
+                Project Catalyst の原文ページ
+              {% endif %}
+              をご覧ください。
+            </p>
+          {% endif %}
+
+          {% if proposal.proposal_url %}
+            <div class="pt-2 border-t border-slate-200 mt-4">
+              <a
+                href="{{ proposal.proposal_url }}"
+                class="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-800"
+                target="_blank"
+                rel="noreferrer"
+              >
+                原文（Project Catalyst サイト）を開く ↗
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </section>
+      {# 日本語タブ（タイトルと summary_ja を想定。今は placeholder でもOK） #}
+      <section id="tab-ja" class="space-y-4 hidden" data-tab-panel="ja">
+        <h2 class="text-lg font-semibold text-slate-900">日本語サマリー</h2>
+
+        {% if proposal.summary_ja %}
+          <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+            {{ proposal.summary_ja }}
+          </p>
+        {% else %}
+          <p class="text-sm text-slate-600">
+            日本語サマリーは準備中です。
+          </p>
+        {% endif %}
+      </section>
+
+      {# やさしい解説タブ（ELPスタイル / 日本語 & 将来スペイン語もここに） #}
+      <section id="tab-easy" class="space-y-4 hidden" data-tab-panel="easy">
+        <h2 class="text-lg font-semibold text-slate-900">やさしい解説</h2>
+
+        <p class="text-sm text-slate-600">
+          ここには、英語に自信がない方でもイメージしやすい「やさしい日本語」で、
+          Problem / Solution / About this idea / Team を順番にまとめていく予定です。
+          （順次追加していきます）
+        </p>
+
+        {# 将来：ELPスタイル日本語 / スペイン語をここに差し込む #}
+      </section>
+    </div>
+  </section>
+
+  <footer class="pt-4">
+    <a
+      href="/"
+      class="inline-flex items-center gap-1 text-sm text-slate-600 hover:text-slate-800"
+    >
+      ← 一覧に戻る
+    </a>
+  </footer>
 </div>
 
-<div class="block-title">概要（日本語）</div>
-<div class="block-body">
-  {% if proposal.summary_ja %}
-    {{ proposal.summary_ja | safe }}
-  {% else %}
-    未翻訳（概要テキスト未設定）
-  {% endif %}
-</div>
+<script>
+  // シンプルなタブ切り替え
+  (function () {
+    const buttons = document.querySelectorAll("[data-tab-button]");
+    const panels = document.querySelectorAll("[data-tab-panel]");
 
-<p style="margin-top:1.5rem;">
-  <a href="/">← 一覧に戻る</a>
-</p>
+    function activate(tab) {
+      buttons.forEach((btn) => {
+        const isActive = btn.dataset.tabButton === tab;
+        btn.classList.toggle("bg-white", isActive);
+        btn.classList.toggle("shadow-sm", isActive);
+        btn.classList.toggle("text-slate-900", isActive);
+        btn.classList.toggle("text-slate-600", !isActive);
+      });
+      panels.forEach((panel) => {
+        panel.classList.toggle("hidden", panel.dataset.tabPanel !== tab);
+      });
+    }
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => activate(btn.dataset.tabButton));
+    });
+
+    // 初期状態は English
+    activate("en");
+  })();
+</script>

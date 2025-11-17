@@ -4,7 +4,7 @@ title: "Fund14 Proposals"
 ---
 
 <h1 class="text-2xl font-semibold mb-2">
-  Cardanoism Fund14 提案一覧
+  CardanoCatalyst Fund14 提案一覧
 </h1>
 <p class="text-sm text-carda-textSub mb-6">
   Project Catalyst Fund14 の提案を、日本語タイトルとメタ情報つきで一覧表示しています。
@@ -21,9 +21,14 @@ title: "Fund14 Proposals"
     <article class="group rounded-2xl border border-carda-primarySoft/40 bg-carda-surface p-4 shadow-sm hover:shadow-md hover:border-carda-primary/70 transition-all">
       <header class="mb-2">
         <h2 class="text-sm font-semibold leading-snug text-carda-textMain">
-          {{ p.title_ja or p.title_en }}
+          <a
+            href="/proposals/{{ p.proposal_id | lower }}/"
+            class="hover:underline underline-offset-2"
+          >
+            {{ p.title_ja or p.title_en }}
+          </a>
         </h2>
-        <p class="mt-1 text-[11px] text-carda-textSub">
+       <p class="mt-1 text-[11px] text-carda-textSub">
           {{ p.proposal_id }} · Fund {{ p.fund }}
         </p>
 
