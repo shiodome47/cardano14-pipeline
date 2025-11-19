@@ -127,6 +127,7 @@ def main():
                 "challenge": challenge,
                 "title_en": title,
                 "summary_en": "",
+                "full_text_en": "",
                 "requested_ada": requested,
                 "status": status,
                 "votes_cast": votes_cast,

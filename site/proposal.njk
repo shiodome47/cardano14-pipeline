@@ -130,112 +130,155 @@ permalink: "/proposals/{{ proposal.proposal_id }}/index.html"
       >
         やさしい解説
       </button>
+      <button
+        type="button"
+        class="px-4 py-1.5 rounded-full text-slate-600"
+        data-tab-button="es"
+      >
+        Español fácil
+      </button>
     </div>
 
     <div class="space-y-8">
       {# English タブ #}
       <section id="tab-en" class="space-y-6" data-tab-panel="en">
-        <div class="space-y-6">
-          {% if proposal.problem_en or proposal.solution_en or proposal.about_en or proposal.team_en %}
+        {% if proposal.problem_en or proposal.solution_en or proposal.about_en or proposal.team_en %}
 
-            <div>
-              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
-                Problem
-              </div>
-              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
-                {{ proposal.problem_en or "—" }}
-              </p>
-            </div>
-
-            <div>
-              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
-                Solution
-              </div>
-              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
-                {{ proposal.solution_en or "—" }}
-              </p>
-            </div>
-
-            <div>
-              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
-                About this idea
-              </div>
-              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
-                {{ proposal.about_en or "—" }}
-              </p>
-            </div>
-
-            <div>
-              <div class="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-1">
-                Team
-              </div>
-              <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
-                {{ proposal.team_en or "—" }}
-              </p>
-            </div>
-
-          {% else %}
-            <p class="text-sm text-slate-700">
-              詳しい内容は
-              {% if proposal.proposal_url %}
-                <a
-                  href="{{ proposal.proposal_url }}"
-                  class="text-sky-600 hover:text-sky-700 underline underline-offset-2"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Project Catalyst の原文ページ
-                </a>
-              {% else %}
-                Project Catalyst の原文ページ
-              {% endif %}
-              をご覧ください。
+          {# Problem #}
+          <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+            <h3 class="text-base font-semibold text-slate-900">Problem</h3>
+            <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+              {{ proposal.problem_en or "—" }}
             </p>
+          </div>
+
+          {# Solution #}
+          <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+            <h3 class="text-base font-semibold text-slate-900">Solution</h3>
+            <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
+              {{ proposal.solution_en or "—" }}
+            </p>
+          </div>
+
+          {# About this idea（LLMで整形された版があれば優先表示） #}
+        {% if proposal.about_structured_en %}
+
+          {# 1. Markdown → HTML に変換してから処理する #}
+          {% set rendered = proposal.about_structured_en | markdown | safe %}
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-slate-900">
+              About this idea
+              <span class="ml-1 text-[11px] font-normal text-slate-500">(structured)</span>
+            </h3>
+
+            {# 2. Eleventy JS フィルタで <hr> ごとに分割 #}
+            {% set sections = rendered | split_hr_sections %}
+
+            <div class="space-y-4">
+              {% for section in sections %}
+                <article
+                  class="rounded-2xl border border-slate-200 bg-white/95 p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
+                >
+                  {{ section | safe }}
+                </article>
+              {% endfor %}
+            </div>
+
+            <p class="pt-1 text-[11px] leading-snug text-slate-500">
+              ※ このセクションは提案フォームの内容を要約・整理したものです。詳細は Project Catalyst の原文ページもあわせてご覧ください。
+            </p>
+          </section>
+
+        {% else %}
+
+            {# まだ整形版がない場合は従来どおり about_en をそのまま表示 #}
+            <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+              <h3 class="text-base font-semibold text-slate-900">About this idea</h3>
+              <div class="prose prose-sm max-w-none text-slate-800 max-h-72 overflow-y-auto pr-2">
+                {{ (proposal.about_en or "—") | md_sanitize }}
+              </div>
+              <p class="mt-2 text-xs text-slate-500">
+                ※ テキストが長い場合があります。全体は Project Catalyst の原文ページもあわせてご覧ください。
+              </p>
+            </div>
           {% endif %}
 
-          {% if proposal.proposal_url %}
-            <div class="pt-2 border-t border-slate-200 mt-4">
+
+          {# Team（こちらも長文になりがちなので軽くボックス化） #}
+          <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+            <h3 class="text-base font-semibold text-slate-900">Team</h3>
+            <div class="text-sm leading-relaxed text-slate-800 whitespace-pre-line max-h-60 overflow-y-auto pr-2">
+              {{ proposal.team_en or "—" }}
+            </div>
+          </div>
+
+        {% else %}
+          <p class="text-sm text-slate-700">
+            詳しい内容は
+            {% if proposal.proposal_url %}
               <a
                 href="{{ proposal.proposal_url }}"
-                class="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-800"
+                class="text-sky-600 hover:text-sky-700 underline underline-offset-2"
                 target="_blank"
                 rel="noreferrer"
               >
-                原文（Project Catalyst サイト）を開く ↗
+                Project Catalyst の原文ページ
               </a>
-            </div>
-          {% endif %}
-        </div>
-      </section>
-      {# 日本語タブ（タイトルと summary_ja を想定。今は placeholder でもOK） #}
-      <section id="tab-ja" class="space-y-4 hidden" data-tab-panel="ja">
-        <h2 class="text-lg font-semibold text-slate-900">日本語サマリー</h2>
+            {% else %}
+              Project Catalyst の原文ページ
+            {% endif %}
+            をご覧ください。
+          </p>
+        {% endif %}
 
-        {% if proposal.summary_ja %}
-          <p class="text-sm leading-relaxed text-slate-800 whitespace-pre-line">
-            {{ proposal.summary_ja }}
-          </p>
-        {% else %}
-          <p class="text-sm text-slate-600">
-            日本語サマリーは準備中です。
-          </p>
+        {% if proposal.proposal_url %}
+          <div class="pt-2 border-t border-slate-200 mt-4">
+            <a
+              href="{{ proposal.proposal_url }}"
+              class="inline-flex items-center gap-1 text-sm font-medium text-sky-700 hover:text-sky-800"
+              target="_blank"
+              rel="noreferrer"
+            >
+              原文（Project Catalyst サイト）を開く ↗
+            </a>
+          </div>
         {% endif %}
       </section>
 
-      {# やさしい解説タブ（ELPスタイル / 日本語 & 将来スペイン語もここに） #}
-      <section id="tab-easy" class="space-y-4 hidden" data-tab-panel="easy">
-        <h2 class="text-lg font-semibold text-slate-900">やさしい解説</h2>
+      {# 日本語タブ #}
+      <section id="tab-ja" class="space-y-6 hidden" data-tab-panel="ja">
+        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+          <h3 class="text-base font-semibold text-slate-900">日本語</h3>
+          <div class="prose prose-sm max-w-none text-slate-800">
+            {{ (proposal.about_ja or "日本語訳は準備中です。") | md_sanitize }}
+          </div>
+        </div>
+      </section>
 
-        <p class="text-sm text-slate-600">
-          ここには、英語に自信がない方でもイメージしやすい「やさしい日本語」で、
-          Problem / Solution / About this idea / Team を順番にまとめていく予定です。
-          （順次追加していきます）
-        </p>
+      {# やさしい解説タブ #}
+      <section id="tab-easy" class="space-y-6 hidden" data-tab-panel="easy">
+        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+          <h3 class="text-base font-semibold text-slate-900">やさしい解説</h3>
+          <div class="prose prose-sm max-w-none text-slate-800">
+            {{ (proposal.about_ja_easy or "やさしい解説は準備中です。") | md_sanitize }}
+          </div>
+        </div>
+      </section>
 
-        {# 将来：ELPスタイル日本語 / スペイン語をここに差し込む #}
+      {# Español fácil タブ #}
+      <section id="tab-es" class="space-y-6 hidden" data-tab-panel="es">
+        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+          <h3 class="text-base font-semibold text-slate-900">Español fácil</h3>
+          <div class="prose prose-sm max-w-none text-slate-800">
+            {{ (proposal.about_es_easy or "Traducción en preparación.") | md_sanitize }}
+          </div>
+        </div>
       </section>
     </div>
   </section>
+
+
 
   <footer class="pt-4">
     <a
