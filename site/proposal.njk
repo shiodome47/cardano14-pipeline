@@ -6,7 +6,7 @@ pagination:
   size: 1
   alias: proposal
 
-permalink: "/proposals/{{ proposal.proposal_id }}/index.html"
+permalink: "/proposals/{{ proposal.proposal_id | lower }}/index.html"
 ---
 
 <div class="max-w-5xl mx-auto py-10 px-4 sm:px-6 lg:px-8 space-y-10">

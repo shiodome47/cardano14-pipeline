@@ -1,0 +1,22 @@
+---
+// site/proposals.njk
+layout: layouts/base.njk
+title: "Project Catalyst Fund14 Proposals (JA)"
+---
+
+<h1>Project Catalyst Fund14 ・CardanoCatalyst Pipeline</h1>
+<p>全 {{ proposals | length }} 件</p>
+
+<ul>
+{% for proposal in proposals %}
+  <li>
+    <a href="/proposals/{{ proposal.proposal_id | lower }}/">
+      {{ proposal.title_ja }}
+    </a>
+    <br>
+    <small>
+      {{ proposal.proposal_id }} ・Fund {{ proposal.fund }}
+    </small>
+  </li>
+{% endfor %}
+</ul>
