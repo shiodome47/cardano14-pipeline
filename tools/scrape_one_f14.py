@@ -1,5 +1,6 @@
 # tools/scrape_one_f14.py
 import json
+import time
 from pathlib import Path
 
 import requests
@@ -7,6 +8,9 @@ from bs4 import BeautifulSoup
 
 DATA_DIR = Path("data")
 JSON_FILE = DATA_DIR / "f14_proposals_en.json"
+
+# 一度にスクレイプする最大件数（テスト用）
+MAX_ITEMS = 3
 
 
 def fetch_section(soup, title: str) -> str:
@@ -23,23 +27,20 @@ def fetch_section(soup, title: str) -> str:
     if not h2:
         return ""
 
-    # ゴミとして弾きたいテキストのプレフィックス
     unwanted_prefixes = (
-        "Total to date",  # 投票カード
-        "View current challenges",  # フッター
-        "Sign up to receive news",  # フッター
-        "We collect personal data",  # フッター
-        "Follow us",  # フッター
+        "Total to date",
+        "View current challenges",
+        "Sign up to receive news",
+        "We collect personal data",
+        "Follow us",
     )
 
     parts = []
     seen = set()
 
-    # 同じ階層の next_siblings だけを見る
     for sib in h2.next_siblings:
         name = getattr(sib, "name", None)
 
-        # 次の h2 が来たらこのセクションは終わり
         if name == "h2":
             break
 
@@ -60,22 +61,14 @@ def fetch_section(soup, title: str) -> str:
 def scrape_full_text(soup: BeautifulSoup) -> str:
     """
     フォーム全体を「壁テキスト」として1本にまとめる。
-
-    - data-testid="question-answer" ブロックがあれば優先して使う
-    - なければ main 全体 → ページ全体の順でフォールバック
-    - フッターやニュース購読などの不要テキストは除外
-    - 同じ行は 1 回だけ
     """
     blocks = []
 
-    # 1) Catalyst の Q&A ブロックっぽいところを探す
     qa_blocks = soup.find_all(attrs={"data-testid": "question-answer"})
 
     if qa_blocks:
         for block in qa_blocks:
-            # 質問タイトル (h2/h3/h4)
             q_el = block.find(["h2", "h3", "h4"])
-            # 回答部分（data-testid="answer" があればそこ、なければブロック全体）
             a_el = block.find(attrs={"data-testid": "answer"}) or block
 
             q_text = q_el.get_text(" ", strip=True) if q_el else ""
@@ -90,14 +83,12 @@ def scrape_full_text(soup: BeautifulSoup) -> str:
 
         raw_text = "\n\n".join(blocks)
     else:
-        # 2) フォールバック：main → ページ全体
         main = soup.find("main")
         if main:
             raw_text = main.get_text("\n", strip=True)
         else:
             raw_text = soup.get_text("\n", strip=True)
 
-    # 3) フッターなどを掃除しつつ、重複行を削除
     unwanted_starts = (
         "View current challenges",
         "Sign up to receive news",
@@ -124,7 +115,7 @@ def scrape_full_text(soup: BeautifulSoup) -> str:
 
 
 def scrape(url: str) -> dict:
-    print(f"Fetching: {url}")
+    print(f"  Fetching: {url}")
     r = requests.get(url)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
@@ -140,38 +131,55 @@ def scrape(url: str) -> dict:
         "solution_en": solution,
         "about_en": about,
         "team_en": team,
-        "full_text_en": full_text,  # ★ LLM 用の壁テキスト
+        "full_text_en": full_text,
     }
 
 
 def main():
-    target_id = "F14-0001"  # ←まず1件でテスト（後で全件対応）
-    url = input("原文URLを入力してください: ").strip()
+    print("[scrape_f14] START")
 
-    scraped = scrape(url)
+    if not JSON_FILE.exists():
+        raise FileNotFoundError(JSON_FILE)
 
-    print(
-        "\nScraped result:\n", json.dumps(scraped, indent=2, ensure_ascii=False), "\n"
-    )
-
-    # 既存JSON読み込み
     with JSON_FILE.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # 対象 proposal を更新
-    for item in data:
-        if item["proposal_id"] == target_id:
-            item.update(scraped)
-            break
-    else:
-        print("❌ proposal_id が見つかりません:", target_id)
-        return
+    updated = 0
 
-    # 書き戻し
+    for item in data:
+        pid = item.get("proposal_id")
+        url = item.get("proposal_url")
+
+        if not url:
+            print(f"- {pid}: no proposal_url, skip")
+            continue
+
+        # すでに full_text_en があればスキップ（再実行に備えた設計）
+        if item.get("full_text_en"):
+            print(f"- {pid}: already has full_text_en, skip")
+            continue
+
+        print(f"- {pid}: scraping...")
+        try:
+            scraped = scrape(url)
+        except Exception as e:
+            print(f"  ❌ error while scraping {pid}: {e}")
+            continue
+
+        item.update(scraped)
+        updated += 1
+
+        # サイトへの負荷を下げるため、少し待つ
+        time.sleep(1)
+
+        if updated >= MAX_ITEMS:
+            print(f"[scrape_f14] Reached MAX_ITEMS={MAX_ITEMS}, stopping.")
+            break
+
     with JSON_FILE.open("w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-    print(f"✅ updated {target_id} → {JSON_FILE}")
+    print(f"[scrape_f14] Done. Updated {updated} proposals.")
 
 
 if __name__ == "__main__":

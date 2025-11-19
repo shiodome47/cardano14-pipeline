@@ -140,7 +140,9 @@ permalink: "/proposals/{{ proposal.proposal_id | lower }}/index.html"
     </div>
 
     <div class="space-y-8">
-      {# English タブ #}
+      {# ===========================
+         English タブ
+         =========================== #}
       <section id="tab-en" class="space-y-6" data-tab-panel="en">
         {% if proposal.problem_en or proposal.solution_en or proposal.about_en or proposal.team_en %}
 
@@ -161,36 +163,36 @@ permalink: "/proposals/{{ proposal.proposal_id | lower }}/index.html"
           </div>
 
           {# About this idea（LLMで整形された版があれば優先表示） #}
-        {% if proposal.about_structured_en %}
+          {% if proposal.about_structured_en %}
 
-          {# 1. Markdown → HTML に変換してから処理する #}
-          {% set rendered = proposal.about_structured_en | markdown | safe %}
+            {# 1. Markdown → HTML に変換 #}
+            {% set rendered = proposal.about_structured_en | markdown | safe %}
 
-          <section class="space-y-3">
-            <h3 class="text-base font-semibold text-slate-900">
-              About this idea
-              <span class="ml-1 text-[11px] font-normal text-slate-500">(structured)</span>
-            </h3>
+            <section class="space-y-3">
+              <h3 class="text-base font-semibold text-slate-900">
+                About this idea
+                <span class="ml-1 text-[11px] font-normal text-slate-500">(structured)</span>
+              </h3>
 
-            {# 2. Eleventy JS フィルタで <hr> ごとに分割 #}
-            {% set sections = rendered | split_hr_sections %}
+              {# 2. <hr> ごとに分割 #}
+              {% set sections = rendered | split_hr_sections %}
 
-            <div class="space-y-4">
-              {% for section in sections %}
-                <article
-                  class="rounded-2xl border border-slate-200 bg-white/95 p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
-                >
-                  {{ section | safe }}
-                </article>
-              {% endfor %}
-            </div>
+              <div class="space-y-4">
+                {% for section in sections %}
+                  <article
+                    class="rounded-2xl border border-slate-200 bg-white/95 p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
+                  >
+                    {{ section | safe }}
+                  </article>
+                {% endfor %}
+              </div>
 
-            <p class="pt-1 text-[11px] leading-snug text-slate-500">
-              ※ このセクションは提案フォームの内容を要約・整理したものです。詳細は Project Catalyst の原文ページもあわせてご覧ください。
-            </p>
-          </section>
+              <p class="pt-1 text-[11px] leading-snug text-slate-500">
+                ※ This section is a structured summary generated from the proposal form. For full details, please also refer to the original Project Catalyst page.
+              </p>
+            </section>
 
-        {% else %}
+          {% else %}
 
             {# まだ整形版がない場合は従来どおり about_en をそのまま表示 #}
             <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
@@ -204,8 +206,7 @@ permalink: "/proposals/{{ proposal.proposal_id | lower }}/index.html"
             </div>
           {% endif %}
 
-
-          {# Team（こちらも長文になりがちなので軽くボックス化） #}
+          {# Team #}
           <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
             <h3 class="text-base font-semibold text-slate-900">Team</h3>
             <div class="text-sm leading-relaxed text-slate-800 whitespace-pre-line max-h-60 overflow-y-auto pr-2">
@@ -246,37 +247,131 @@ permalink: "/proposals/{{ proposal.proposal_id | lower }}/index.html"
         {% endif %}
       </section>
 
-      {# 日本語タブ #}
+      {# ===========================
+         日本語タブ (structured_ja)
+         =========================== #}
       <section id="tab-ja" class="space-y-6 hidden" data-tab-panel="ja">
-        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
-          <h3 class="text-base font-semibold text-slate-900">日本語</h3>
-          <div class="prose prose-sm max-w-none text-slate-800">
-            {{ (proposal.about_ja or "日本語訳は準備中です。") | md_sanitize }}
+        {% if proposal.about_structured_ja %}
+          {% set rendered_ja = proposal.about_structured_ja | markdown | safe %}
+          {% set sections_ja = rendered_ja | split_hr_sections %}
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-slate-900">
+              日本語まとめ
+              <span class="ml-1 text-[11px] font-normal text-slate-500">(構造化された解説)</span>
+            </h3>
+
+            <div class="space-y-4">
+              {% for section in sections_ja %}
+                <article
+                  class="rounded-2xl border border-slate-200 bg-white/95 p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
+                >
+                  {{ section | safe }}
+                </article>
+              {% endfor %}
+            </div>
+
+            <p class="pt-1 text-[11px] leading-snug text-slate-500">
+              ※ Project Catalyst の提案フォームをもとに、日本語で構造的に整理した解説です。原文は英語タブや公式ページもあわせてご覧ください。
+            </p>
+          </section>
+        {% else %}
+          <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
+            <h3 class="text-base font-semibold text-slate-900">日本語</h3>
+            <div class="prose prose-sm max-w-none text-slate-800">
+              {{ (proposal.about_ja or "日本語訳は準備中です。") | md_sanitize }}
+            </div>
           </div>
-        </div>
+        {% endif %}
       </section>
 
-      {# やさしい解説タブ #}
+      {# ===========================
+         やさしい日本語タブ (ELPスタイル)
+         =========================== #}
       <section id="tab-easy" class="space-y-6 hidden" data-tab-panel="easy">
-        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
-          <h3 class="text-base font-semibold text-slate-900">やさしい解説</h3>
-          <div class="prose prose-sm max-w-none text-slate-800">
-            {{ (proposal.about_ja_easy or "やさしい解説は準備中です。") | md_sanitize }}
-          </div>
-        </div>
+        {# 値があれば ELP テキストを、なければ「準備中です」を表示 #}
+
+        {% set ja_elp_raw = proposal.about_structured_ja_elp | default("", true) %}
+
+        {% if ja_elp_raw | trim %}
+          {# ★ about_structured_ja_elp が入っているときはこちら ★ #}
+          {% set rendered_ja_elp = ja_elp_raw | markdown | safe %}
+          {% set sections_ja_elp = rendered_ja_elp | split_hr_sections %}
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-slate-900">
+              やさしい日本語
+              <span class="ml-1 text-[11px] font-normal text-slate-500">(ELPスタイル)</span>
+            </h3>
+
+            <div class="space-y-4">
+              {% for section in sections_ja_elp %}
+                <article
+                  class="rounded-2xl border border-emerald-300 bg-white shadow-sm p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
+                >
+                  {{ section | safe }}
+                </article>
+              {% endfor %}
+            </div>
+
+            <p class="pt-1 text-[11px] leading-snug text-slate-500">
+              ※ 重要なポイントだけを、シンプルでやさしい日本語にまとめたバージョンです。英語タブ・日本語タブとあわせて読み比べできます。
+            </p>
+          </section>
+
+        {% else %}
+          {# ★ まだ ELP テキストが JSON にないときはこちら ★ #}
+          <p class="text-sm text-slate-700">
+            やさしい日本語での解説は準備中です。
+          </p>
+        {% endif %}
       </section>
 
-      {# Español fácil タブ #}
-      <section id="tab-es" class="space-y-6 hidden" data-tab-panel="es">
-        <div class="p-4 rounded-2xl bg-white/80 ring-1 ring-slate-200/70 shadow-sm space-y-2">
-          <h3 class="text-base font-semibold text-slate-900">Español fácil</h3>
-          <div class="prose prose-sm max-w-none text-slate-800">
-            {{ (proposal.about_es_easy or "Traducción en preparación.") | md_sanitize }}
-          </div>
-        </div>
+
+      {# ===========================
+         Español fácil タブ (ELPスタイル)
+         =========================== #}
+      <section id="tab-es-easy" class="space-y-6 hidden" data-tab-panel="es">
+        {# 値があれば ELP テキストを、なければ「準備中です」を表示 #}
+
+        {% set es_elp_raw = proposal.about_structured_es_elp | default("", true) %}
+
+        {% if es_elp_raw | trim %}
+          {# ★ about_structured_es_elp が入っているときはこちら ★ #}
+          {% set rendered_es_elp = es_elp_raw | markdown | safe %}
+          {% set sections_es_elp = rendered_es_elp | split_hr_sections %}
+
+          <section class="space-y-3">
+            <h3 class="text-base font-semibold text-slate-900">
+              Español fácil
+              <span class="ml-1 text-[11px] font-normal text-slate-500">(ELPスタイル)</span>
+            </h3>
+
+            <div class="space-y-4">
+              {% for section in sections_es_elp %}
+                <article
+                  class="rounded-2xl border border-emerald-300 bg-white shadow-sm p-4 sm:p-5 prose prose-sm max-w-none text-slate-800"
+                >
+                  {{ section | safe }}
+                </article>
+              {% endfor %}
+            </div>
+
+            <p class="pt-1 text-[11px] leading-snug text-slate-500">
+              ※ 重要なポイントだけを、やさしいスペイン語（Español fácil）でまとめたバージョンです。
+              英語・日本語・やさしい日本語タブとあわせて読み比べできます。
+            </p>
+          </section>
+
+        {% else %}
+          {# ★ まだ ELP テキストが JSON にないときはこちら ★ #}
+          <p class="text-sm text-slate-700">
+            Español fácil での解説は準備中です。
+          </p>
+        {% endif %}
       </section>
-    </div>
-  </section>
+   </div>
+
 
 
 

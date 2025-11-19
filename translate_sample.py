@@ -91,8 +91,8 @@ def main():
             print(f"Reuse translation: {pid} - {title_en}")
         else:
             print(f"Translating: {pid} - {title_en}")
-            title_ja = translate_text(title_en) if title_en else ""
-            summary_ja = translate_text(summary_en) if summary_en else ""
+            title_ja = translate_title(title_en) if title_en else ""
+            summary_ja = translate_summary(summary_en) if summary_en else ""
 
         new_p = {
             **p,  # 英語側の最新メタデータを優先
