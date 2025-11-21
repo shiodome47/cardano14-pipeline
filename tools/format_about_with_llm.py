@@ -12,7 +12,7 @@ DATA_DIR = Path("data")
 INPUT_FILE = DATA_DIR / "f14_proposals_en.json"
 BACKUP_FILE = DATA_DIR / "f14_proposals_en.before_structured.json"
 
-MAX_PROPOSALS = 3  # 一度に処理する最大件数
+MAX_PROPOSALS = 10  # 一度に処理する最大件数
 
 SYSTEM_PROMPT = """You are an assistant that restructures long, messy proposal form text
 from Project Catalyst into a clean, readable Markdown document.

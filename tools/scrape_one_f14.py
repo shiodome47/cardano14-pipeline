@@ -10,7 +10,7 @@ DATA_DIR = Path("data")
 JSON_FILE = DATA_DIR / "f14_proposals_en.json"
 
 # 一度にスクレイプする最大件数（テスト用）
-MAX_ITEMS = 3
+MAX_ITEMS = 1200
 
 
 def fetch_section(soup, title: str) -> str:
@@ -150,6 +150,11 @@ def main():
         pid = item.get("proposal_id")
         url = item.get("proposal_url")
 
+        # 過去にスクレイプエラーを記録していたらスキップ
+        if item.get("_scrape_error"):
+            print(f"- {pid}: has _scrape_error, skip")
+            continue
+
         if not url:
             print(f"- {pid}: no proposal_url, skip")
             continue
@@ -164,6 +169,8 @@ def main():
             scraped = scrape(url)
         except Exception as e:
             print(f"  ❌ error while scraping {pid}: {e}")
+            # 次回以降は自動スキップできるようメモ
+            item["_scrape_error"] = str(e)
             continue
 
         item.update(scraped)

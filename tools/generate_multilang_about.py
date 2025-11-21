@@ -12,7 +12,7 @@ SRC = Path("data/f14_proposals_en.json")
 DST = Path("data/f14_proposals_multi.json")
 
 # ★テスト用：何件まで処理するか（Noneなら全件）
-MAX_ITEMS = 3
+MAX_ITEMS = None
 
 
 def build_prompt(about_en: str) -> str:
